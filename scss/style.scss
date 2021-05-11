@@ -1,5 +1,14 @@
+@use "variables";
+
 .frontpage{
+
+    .header{
+
+    }
     .section-1{
         background-image: url("img/section-1-background.jpg");
+        h2{
+            font-family: variables.$header;
+        }
     }
 }
