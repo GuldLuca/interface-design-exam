@@ -1,0 +1,157 @@
+@use "variables";
+
+*{
+    margin: 0;
+    font-family: variables.$header;
+}
+
+.frontpage{
+    margin: 0;
+
+    .read-more-btn{
+        background-color: variables.$main;
+        color: variables.$basic-white;
+        border-radius: 20px;
+        padding-left: 20px;
+        padding-right: 20px;
+        padding-top: 10px;
+        padding-bottom:10px;
+        border: none;
+    }
+
+    .header{
+        display: grid;
+        grid-template-columns: 1fr 1fr 0.5fr 0.5fr;
+
+        .profile{
+            img{
+                border-radius: 20px;
+            }
+            padding-left: 20px;
+            padding-top: 20px;
+        }
+        .logo{
+            img{
+                width: 50px;
+                height: auto;
+            }
+            padding-top: 12px;
+        }
+        .search{
+            img{
+                width: 20px;
+                height: auto;
+                padding-left: 35px;
+            }
+            padding-top: 25px;
+        }
+        .menu{
+            img{
+                padding-left: 10px;
+            }
+            padding-top: 25px;
+        }
+    }
+    .section-1{
+        background-image: url("img/section-1-background.jpg");
+        background-size: 100% auto;
+        background-repeat: no-repeat;
+        width: 100%;
+        height: auto;
+        padding-bottom: 100px;
+
+        .section-text{
+            width: 100%;
+            h2{
+                font-size: 19px;
+                padding-top: 100px;
+                padding-left: 70px;
+                width: 40%;
+            }
+        }
+
+        button{
+            margin-left: 70px;
+            margin-top: 20px;
+        }
+    }
+
+    .section-2{
+        padding-bottom: 50px;
+        h1{
+            color: variables.$basic-dark-red;
+            padding-top: 40px;
+            padding-left: 18px;
+            padding-bottom: 30px;
+        }
+
+        .background{
+            background-image: url("img/section-2-background.png");
+            background-size: 100% auto;
+            background-repeat: no-repeat;
+            width: 90%;
+            margin-left: 19px;
+            height: auto;
+            padding-top: 5px;
+
+            .recipe-label{
+                background-color: variables.$main-red-30;
+                color: variables.$basic-white;
+                margin-left: 10px;
+                margin-top: 5px;
+                padding-left: 12px;
+                padding-right: 12px;
+                padding-top: 8px;
+                padding-bottom: 8px;
+                width: 10%;
+                text-align: center;
+                border-radius: 25px;
+                font-size: small;
+            }
+
+            .grid-view{
+                display: grid;
+                grid-template-columns: 4fr 2fr;
+            }
+
+            .recipe-white-box{
+                background-color: variables.$basic-white;
+                margin-top: 200px;
+                border-radius: 20px;
+
+                .recipe-title{
+                    padding-top: 10px;
+                }
+                .recipe-diet{
+                    color: variables.$basic-light-grey;
+                    font-size: small;
+                    padding-top: 5px;
+                }
+            }
+
+            .ratings{
+                margin-top: 200px;
+                background-color: variables.$see-through;
+                padding-left: 10px;
+                padding-right: 10px;
+                padding-top: 10px;
+                padding-bottom: 10px;
+            }
+        }
+
+        .last-section-recipe{
+            background-color: variables.$basic-white;
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr 2fr;
+            width: 90%;
+            margin-left: 19px;
+            padding-top: 5px;
+
+            img{
+                width: 40px;
+                height: auto;
+            }
+        }
+        
+    }
+}
