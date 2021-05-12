@@ -1,17 +1,17 @@
 //////////////////////////////////               COLORS              ///////////////////////////////////////
-$main: #EE2222;;
+$main: #ee2222;
 $main-red-10: rgba(238, 34, 34, 0.1);
 $main-red-30: rgba(238, 34, 34, 0.3);
-$basic-dark-red: #4D0B0B;
-$basic-dark-grey: #4D4D4D;
+$basic-dark-red: #4d0b0b;
+$basic-dark-grey: #4d4d4d;
 $basic-brown-10: rgba(77, 11, 11, 0.1);
-$basic-white: #FFFFFF;
+$basic-white: #ffffff;
 $basic-light-grey: #949494;
 $basic-black: black;
-$accent-orange: #ED7321;
-$accent-green: #1FE5B7;
-$alert-yellow: #FFBA08;
-$alert-red: #D00000;
+$accent-orange: #ed7321;
+$accent-green: #1fe5b7;
+$alert-yellow: #ffba08;
+$alert-red: #d00000;
 $basic-brown-30: rgba(77, 11, 11, 0.6);
 $accent-green-10: rgba(31, 229, 183, 0.3);
 $see-through: rgba(255, 255, 255, 0.5);
@@ -23,5 +23,10 @@ $laptop: 1024px;
 $desktop: 1200px;
 
 /////////////////////////////////                   FONTS                       ////////////////////////////////////////
+@import url(https://use.typekit.net/rll2ezx.css);
+
+$sofia-pro: sofia-pro, sans-serif;
+$sofia-pro-soft: sofia-pro-soft, sans-serif;
+$sofia-condensed: sofia-pro-condensed, sans-serif;
 
 $header: 'Sofia Pro';
