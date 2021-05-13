@@ -1,3 +1,19 @@
 @import url(https://use.typekit.net/rll2ezx.css);
+* {
+  margin: 0;
+  font-family: sofia-pro, sans-serif;
+}
+
+body {
+  width: 100%;
+}
+
+.mb-30 {
+  margin-bottom: 30px;
+}
+
+.mb-45 {
+  margin-bottom: 45px;
+}
 
 /*# sourceMappingURL=general.css.map */

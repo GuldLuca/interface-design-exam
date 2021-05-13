@@ -1,1 +1,16 @@
 @use "variables";
+
+* {
+  margin: 0;
+  font-family: variables.$sofia-pro;
+}
+body {
+  width: 100%;
+}
+
+.mb-30 {
+  margin-bottom: 30px;
+}
+.mb-45 {
+  margin-bottom: 45px;
+}
