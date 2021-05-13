@@ -23,7 +23,7 @@
     .header{
         display: grid;
         grid-template-columns: 1fr 1fr 0.5fr 0.5fr;
-
+        padding-bottom: 10px;
         .profile{
             img{
                 border-radius: 20px;
@@ -33,10 +33,10 @@
         }
         .logo{
             img{
-                width: 50px;
+                width: 100px;
                 height: auto;
             }
-            padding-top: 12px;
+            padding-top: 20px;
         }
         .search{
             img{
@@ -363,5 +363,36 @@
 }
 
 @media(min-width: variables.$tablet){
-    
+    .frontpage{
+    .header{
+        .profile{
+            img{
+                width: 50px;
+                height: auto;
+                border-radius: 50px;
+            }
+        }
+        .logo{
+            img{
+                width: 150px;
+            }
+        }
+
+        .search{
+            img{
+                width: 30px;
+                padding-left: 70px;
+            }
+        }
+
+        .menu{
+            img{
+                padding-left: 50px;
+                width: 50px;
+                height: auto;
+            }
+            padding-top: 35px;
+        }
+    }
+}
 }

@@ -21,6 +21,7 @@
 .frontpage .header {
   display: grid;
   grid-template-columns: 1fr 1fr 0.5fr 0.5fr;
+  padding-bottom: 10px;
 }
 .frontpage .header .profile {
   padding-left: 20px;
@@ -30,10 +31,10 @@
   border-radius: 20px;
 }
 .frontpage .header .logo {
-  padding-top: 12px;
+  padding-top: 20px;
 }
 .frontpage .header .logo img {
-  width: 50px;
+  width: 100px;
   height: auto;
 }
 .frontpage .header .search {
@@ -314,6 +315,29 @@
   display: inline;
   font-size: 14px;
   font-weight: 300;
+}
+
+@media (min-width: 768px) {
+  .frontpage .header .profile img {
+    width: 50px;
+    height: auto;
+    border-radius: 50px;
+  }
+  .frontpage .header .logo img {
+    width: 150px;
+  }
+  .frontpage .header .search img {
+    width: 30px;
+    padding-left: 70px;
+  }
+  .frontpage .header .menu {
+    padding-top: 35px;
+  }
+  .frontpage .header .menu img {
+    padding-left: 50px;
+    width: 50px;
+    height: auto;
+  }
 }
 
 /*# sourceMappingURL=frontpage.css.map */
