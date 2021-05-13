@@ -109,6 +109,7 @@ a {
       }
       &:nth-child(2) {
         grid-area: two;
+        background-image: url(../img/cake.png);
       }
       &:nth-child(3) {
         grid-area: three;
@@ -118,6 +119,12 @@ a {
       }
     }
   }
+}
+#img1 {
+  background-image: url(../img/bread.png) !important;
+}
+#img2 {
+  background-image: none !important;
 }
 section {
   width: 95%;

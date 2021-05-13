@@ -109,12 +109,21 @@ a.tab-active {
 }
 #board-wrapper .board-icons-wrapper div:nth-child(2) {
   grid-area: two;
+  background-image: url(../img/cake.png);
 }
 #board-wrapper .board-icons-wrapper div:nth-child(3) {
   grid-area: three;
 }
 #board-wrapper .board-icons-wrapper div:nth-child(4) {
   grid-area: four;
+}
+
+#img1 {
+  background-image: url(../img/bread.png) !important;
+}
+
+#img2 {
+  background-image: none !important;
 }
 
 section {
