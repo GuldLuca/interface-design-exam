@@ -1,0 +1,82 @@
+@import url(https://use.typekit.net/rll2ezx.css);
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+button {
+  width: 100px;
+  height: 38px;
+  margin-right: 17px;
+  margin-bottom: 17px;
+  align-self: flex-end;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  font-weight: normal;
+  font-size: 16px;
+  color: #ffffff;
+  background: #ed7321;
+  border-radius: 10px;
+}
+button img {
+  height: 16px;
+  margin-left: 5px;
+}
+
+.header-wrapper {
+  margin-top: 21px;
+  margin-bottom: 30px;
+}
+.header-wrapper img {
+  height: 16.25px;
+  width: 17px;
+}
+.header-wrapper #arrow-back {
+  margin-top: 6px;
+  margin-left: 18px;
+  position: absolute;
+  left: 0;
+}
+.header-wrapper h1 {
+  margin: auto;
+  font-weight: 800;
+  font-size: 20px;
+  color: #4d4d4d;
+}
+.header-wrapper h1 img {
+  margin-right: 11px;
+}
+
+.profile-wrapper {
+  margin-bottom: 22px;
+  display: flex;
+  flex-direction: column;
+}
+.profile-wrapper img {
+  margin: auto;
+  width: 50px;
+}
+.profile-wrapper h2 {
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 25px;
+  color: #4d0b0b;
+}
+
+@media (min-width: 768px) {
+  body {
+    width: auto;
+    margin-left: 10%;
+    margin-right: 10%;
+  }
+}
+@media (min-width: 1200px) {
+  section {
+    width: 900px;
+  }
+}
+
+/*# sourceMappingURL=cookbook.css.map */

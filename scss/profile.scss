@@ -131,6 +131,9 @@ section {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-evenly;
+  a {
+    padding: 0;
+  }
 }
 
 #link-add-new-cookbook {
