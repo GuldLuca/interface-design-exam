@@ -90,7 +90,7 @@ section#search-results {
   color: #4d4d4d;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 700px) {
   body {
     width: auto;
     margin-left: 10%;

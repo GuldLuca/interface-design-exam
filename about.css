@@ -63,7 +63,7 @@ form button img {
   margin-right: 14px;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 700px) {
   body {
     width: auto;
     margin-left: 10%;
