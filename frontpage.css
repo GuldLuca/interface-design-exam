@@ -4,9 +4,6 @@
   font-family: sofia-pro, sans-serif;
 }
 
-.frontpage {
-  margin: 0;
-}
 .frontpage .read-more-btn {
   background-color: #ee2222;
   color: #ffffff;
@@ -19,8 +16,8 @@
   font-size: 12px;
 }
 .frontpage .header {
-  display: grid;
-  grid-template-columns: 1fr 1fr 0.5fr 0.5fr;
+  display: flex;
+  justify-content: space-between;
   padding-bottom: 10px;
 }
 .frontpage .header .profile {
@@ -37,97 +34,100 @@
   width: 100px;
   height: auto;
 }
-.frontpage .header .search {
+.frontpage .header .search-and-menu {
+  padding-right: 20px;
   padding-top: 25px;
-}
-.frontpage .header .search img {
-  width: 20px;
-  height: auto;
-  padding-left: 35px;
-}
-.frontpage .header .menu {
-  padding-top: 25px;
-}
-.frontpage .header .menu img {
-  padding-left: 10px;
 }
 .frontpage .section-1 {
   background-image: url("img/section-1-background.jpg");
   background-size: 100% auto;
   background-repeat: no-repeat;
   width: 100%;
-  height: auto;
-  padding-bottom: 100px;
+  min-height: 298px;
 }
 .frontpage .section-1 .section-text {
   width: 100%;
 }
 .frontpage .section-1 .section-text h2 {
-  font-size: 19px;
+  font-size: 20px;
   padding-top: 100px;
   padding-left: 70px;
   width: 40%;
+  font-weight: 400;
 }
 .frontpage .section-1 button {
   margin-left: 70px;
   margin-top: 20px;
+  font-weight: 400;
+  font-size: 12px;
 }
 .frontpage .section-2 {
   padding-bottom: 50px;
 }
 .frontpage .section-2 h1 {
   color: #4d0b0b;
-  padding-top: 40px;
+  padding-top: 30px;
   padding-left: 18px;
   padding-bottom: 30px;
+  font-size: 25px;
+  font-weight: 800;
 }
-.frontpage .section-2 .background {
+.frontpage .section-2 .flex-container {
+  display: flex;
+  justify-content: center;
+}
+.frontpage .section-2 .flex-container .background {
   background-image: url("img/section-2-background.png");
   background-size: 100% auto;
   background-repeat: no-repeat;
   width: 90%;
-  margin-left: 19px;
   height: auto;
   padding-top: 5px;
 }
-.frontpage .section-2 .background .recipe-label {
+.frontpage .section-2 .flex-container .background .recipe-label {
   background-color: rgba(238, 34, 34, 0.3);
   color: #ffffff;
   margin-left: 10px;
   margin-top: 5px;
-  padding-left: 12px;
-  padding-right: 12px;
+  padding-left: 5px;
+  padding-right: 5px;
   padding-top: 8px;
   padding-bottom: 8px;
   width: 10%;
   text-align: center;
   border-radius: 25px;
-  font-size: small;
+  font-size: 12px;
+  font-weight: 400;
 }
-.frontpage .section-2 .background .grid-view {
+.frontpage .section-2 .flex-container .background .grid-view {
   display: grid;
   grid-template-columns: 4fr 2fr;
 }
-.frontpage .section-2 .background .recipe-white-box {
+.frontpage .section-2 .flex-container .background .recipe-white-box {
   background-color: #ffffff;
   margin-top: 200px;
-  border-radius: 20px;
+  border-radius: 0px 20px 0px 0px;
 }
-.frontpage .section-2 .background .recipe-white-box .recipe-title {
+.frontpage .section-2 .flex-container .background .recipe-white-box .recipe-title {
   padding-top: 10px;
+  font-weight: 800;
+  font-size: 18px;
 }
-.frontpage .section-2 .background .recipe-white-box .recipe-diet {
+.frontpage .section-2 .flex-container .background .recipe-white-box .recipe-diet {
   color: #949494;
-  font-size: small;
-  padding-top: 5px;
+  font-size: 10px;
+  font-weight: 400;
 }
-.frontpage .section-2 .background .ratings {
+.frontpage .section-2 .flex-container .background .ratings {
   margin-top: 200px;
   background-color: rgba(255, 255, 255, 0.5);
   padding-left: 10px;
   padding-right: 10px;
   padding-top: 10px;
   padding-bottom: 10px;
+  text-align: center;
+  font-weight: 400;
+  font-size: 13px;
 }
 .frontpage .section-2 .last-section-recipe {
   background-color: #ffffff;
@@ -138,8 +138,11 @@
   padding-top: 5px;
 }
 .frontpage .section-2 .last-section-recipe img {
-  width: 40px;
+  width: 45px;
   height: auto;
+}
+.frontpage .section-2 .last-section-recipe button {
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 4px 4px 0px;
 }
 .frontpage .section-3 .background {
   background-image: url("img/section-2-background.png");
@@ -163,7 +166,8 @@
   width: 10%;
   text-align: center;
   border-radius: 25px;
-  font-size: small;
+  font-size: 12px;
+  font-weight: 400;
 }
 .frontpage .section-3 .background .article-title {
   background-color: rgba(255, 255, 255, 0.7);
@@ -173,7 +177,8 @@
   padding-left: 20px;
   padding-top: 10px;
   color: #4d0b0b;
-  font-weight: bold;
+  font-weight: 800;
+  font-size: 18px;
   margin-top: 185px;
 }
 .frontpage .section-3 .background .article-title img {
@@ -185,7 +190,8 @@
   font-size: 9px;
 }
 .frontpage .section-3 .background .manchet {
-  font-size: 13px;
+  font-size: 14px;
+  font-weight: 400;
   color: #4d4d4d;
   padding-top: 20px;
   width: 90%;
@@ -199,10 +205,13 @@
   background-image: url("img/section-4-background.png");
   background-size: 100% auto;
   background-repeat: no-repeat;
-  height: 300px;
+  min-height: 300px;
+  display: flex;
+  flex-direction: column;
 }
 .frontpage .section-4 .background h1 {
-  font-size: 23px;
+  font-size: 25px;
+  font-weight: 800;
   color: #4d0b0b;
   padding-top: 25px;
   padding-left: 15px;
@@ -211,82 +220,83 @@
   border-radius: 15px;
   background-color: rgba(77, 11, 11, 0.1);
   padding-top: 5px;
-  padding-bottom: 5px;
+  padding-bottom: 7px;
   padding-left: 10px;
   padding-right: 10px;
-  width: 40%;
+  width: 150px;
   margin-left: 15px;
+  margin-top: 15px;
+  display: inline-flex;
+  align-content: center;
 }
 .frontpage .section-4 .background .apricots img {
-  display: inline-block;
+  display: inline;
 }
 .frontpage .section-4 .background .apricots p {
-  display: inline-block;
+  display: inline;
   font-size: 14px;
+  font-weight: 400;
+  padding-left: 10px;
+  color: #4d0b0b;
 }
 .frontpage .section-4 .background a {
   color: #4d0b0b;
-  font-weight: bold;
-  padding-left: 100px;
-  padding-top: 180px;
   font-size: 14px;
+  font-weight: 800;
+  align-self: center;
+  margin-top: auto;
+  padding-bottom: 20px;
+}
+.frontpage .section-5 {
+  margin-top: 45px;
+  padding-bottom: 20px;
 }
 .frontpage .section-5 h1 {
-  font-size: 23px;
+  font-size: 25px;
+  font-weight: 800;
   color: #4d0b0b;
-  padding-top: 50px;
   padding-left: 20px;
   padding-bottom: 40px;
 }
 .frontpage .section-5 .images {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  display: flex;
+  justify-content: space-around;
+  flex-flow: row wrap;
 }
 .frontpage .section-5 .images p {
-  font-weight: 500;
+  font-weight: 800;
+  font-size: 16px;
   padding-left: 25px;
 }
 .frontpage .section-5 .images img {
-  border-radius: 50px;
+  border-radius: 65px;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 .frontpage .section-5 .images .img-1 {
-  grid-column-start: 1;
-  grid-column-end: 1;
-  grid-row-start: 1;
-  grid-row-end: 1;
-  padding-left: 40px;
+  padding-left: 20px;
   padding-top: 20px;
 }
 .frontpage .section-5 .images .img-2 {
-  grid-column-start: 2;
-  grid-column-end: 2;
-  grid-row-start: 2;
-  grid-row-end: 2;
+  margin-top: auto;
+  padding-top: 150px;
 }
 .frontpage .section-5 .images .img-3 {
-  grid-column-start: 3;
-  grid-column-end: 3;
-  grid-row-start: 1;
-  grid-row-end: 1;
   padding-right: 20px;
 }
 .frontpage .footer {
-  border-top: 2px solid #949494;
+  border-top: 1px solid #949494;
   width: 90%;
   margin-left: 15px;
-  display: grid;
-  grid-template-columns: 1.5fr 1fr 1fr;
-  grid-template-rows: 1fr 0.75fr 0.6fr;
+  display: flex;
+  flex-direction: column;
 }
 .frontpage .footer a {
   color: #4d4d4d;
   text-decoration: none;
   font-size: 14px;
+  font-weight: 400;
 }
 .frontpage .footer .grid-1 {
-  grid-column: 1/span 1;
-  grid-row: 1/span 1;
   padding-top: 30px;
   padding-bottom: 20px;
 }
@@ -295,26 +305,32 @@
   width: 30px;
   height: auto;
 }
-.frontpage .footer .grid-2 {
-  grid-column: 1/span 1;
-  grid-row: 2/span 1;
+.frontpage .footer .grid-2 .privacy {
+  padding-left: 30px;
 }
 .frontpage .footer .grid-3 {
-  grid-column: 2/span 1;
-  grid-row: 2/span 1;
+  padding-top: 10px;
+}
+.frontpage .footer .grid-3 .contact {
+  padding-left: 70px;
 }
 .frontpage .footer .grid-4 {
-  grid-column: 1/span 3;
-  grid-row: 3/span 1;
-  padding-left: 90px;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  padding-top: 30px;
+  padding-bottom: 30px;
 }
 .frontpage .footer .grid-4 img {
-  display: inline;
+  width: 16px;
+  height: 16px;
+  margin-top: auto;
 }
 .frontpage .footer .grid-4 p {
-  display: inline;
   font-size: 14px;
   font-weight: 300;
+  padding-left: 10px;
+  color: #4d4d4d;
 }
 
 @media (min-width: 768px) {
@@ -328,7 +344,7 @@
   }
   .frontpage .header .search img {
     width: 30px;
-    padding-left: 70px;
+    padding-left: 150px;
   }
   .frontpage .header .menu {
     padding-top: 35px;
