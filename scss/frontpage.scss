@@ -3,10 +3,10 @@
 *{
     margin: 0;
     font-family: variables.$sofia-pro;
+    
 }
 
 .frontpage{
-    margin: 0;
 
     .read-more-btn{
         background-color: variables.$main;
@@ -21,8 +21,8 @@
     }
 
     .header{
-        display: grid;
-        grid-template-columns: 1fr 1fr 0.5fr 0.5fr;
+        display: flex;
+        justify-content: space-between;
         padding-bottom: 10px;
         .profile{
             img{
@@ -38,42 +38,35 @@
             }
             padding-top: 20px;
         }
-        .search{
-            img{
-                width: 20px;
-                height: auto;
-                padding-left: 35px;
-            }
+
+        .search-and-menu{
+            padding-right: 20px;
             padding-top: 25px;
         }
-        .menu{
-            img{
-                padding-left: 10px;
-            }
-            padding-top: 25px;
-        }
+      
     }
     .section-1{
         background-image: url("img/section-1-background.jpg");
         background-size: 100% auto;
         background-repeat: no-repeat;
         width: 100%;
-        height: auto;
-        padding-bottom: 100px;
-
+        min-height: 298px;
         .section-text{
             width: 100%;
             h2{
-                font-size: 19px;
+                font-size: 20px;
                 padding-top: 100px;
                 padding-left: 70px;
                 width: 40%;
+                font-weight: 400;
             }
         }
 
         button{
             margin-left: 70px;
             margin-top: 20px;
+            font-weight: 400;
+            font-size: 12px;
         }
     }
 
@@ -81,64 +74,77 @@
         padding-bottom: 50px;
         h1{
             color: variables.$basic-dark-red;
-            padding-top: 40px;
+            padding-top: 30px;
             padding-left: 18px;
             padding-bottom: 30px;
+            font-size: 25px;
+            font-weight: 800;
         }
 
-        .background{
-            background-image: url("img/section-2-background.png");
-            background-size: 100% auto;
-            background-repeat: no-repeat;
-            width: 90%;
-            margin-left: 19px;
-            height: auto;
-            padding-top: 5px;
+        .flex-container{
+            display: flex;
+            justify-content: center;
 
-            .recipe-label{
-                background-color: variables.$main-red-30;
-                color: variables.$basic-white;
-                margin-left: 10px;
-                margin-top: 5px;
-                padding-left: 12px;
-                padding-right: 12px;
-                padding-top: 8px;
-                padding-bottom: 8px;
-                width: 10%;
-                text-align: center;
-                border-radius: 25px;
-                font-size: small;
-            }
-
-            .grid-view{
-                display: grid;
-                grid-template-columns: 4fr 2fr;
-            }
-
-            .recipe-white-box{
-                background-color: variables.$basic-white;
-                margin-top: 200px;
-                border-radius: 20px;
-
-                .recipe-title{
+            .background{
+                background-image: url("img/section-2-background.png");
+                background-size: 100% auto;
+                background-repeat: no-repeat;
+                width: 90%;
+                height: auto;
+                padding-top: 5px;
+    
+                .recipe-label{
+                    background-color: variables.$main-red-30;
+                    color: variables.$basic-white;
+                    margin-left: 10px;
+                    margin-top: 5px;
+                    padding-left: 5px;
+                    padding-right: 5px;
+                    padding-top: 8px;
+                    padding-bottom: 8px;
+                    width: 10%;
+                    text-align: center;
+                    border-radius: 25px;
+                    font-size: 12px;
+                    font-weight: 400;
+                }
+    
+                .grid-view{
+                    display: grid;
+                    grid-template-columns: 4fr 2fr;
+                }
+    
+                .recipe-white-box{
+                    background-color: variables.$basic-white;
+                    margin-top: 200px;
+                    border-radius: 0px 20px 0px 0px;
+    
+                    .recipe-title{
+                        padding-top: 10px;
+                        font-weight: 800;
+                        font-size: 18px;
+                    }
+                    .recipe-diet{
+                        color: variables.$basic-light-grey;
+                        font-size: 10px;
+                        font-weight: 400;
+                    }
+                }
+    
+                .ratings{
+                    margin-top: 200px;
+                    background-color: variables.$see-through;
+                    padding-left: 10px;
+                    padding-right: 10px;
                     padding-top: 10px;
+                    padding-bottom: 10px;
+                    text-align: center;
+                    font-weight: 400;
+                    font-size: 13px;
                 }
-                .recipe-diet{
-                    color: variables.$basic-light-grey;
-                    font-size: small;
-                    padding-top: 5px;
-                }
-            }
-
-            .ratings{
-                margin-top: 200px;
-                background-color: variables.$see-through;
-                padding-left: 10px;
-                padding-right: 10px;
-                padding-top: 10px;
-                padding-bottom: 10px;
             }
         }
+      
 
         .last-section-recipe{
             background-color: variables.$basic-white;
@@ -149,8 +155,12 @@
             padding-top: 5px;
 
             img{
-                width: 40px;
+                width: 45px;
                 height: auto;
+            }
+
+            button{
+                box-shadow: rgba(0, 0, 0, 0.25) 0px 4px 4px 0px;
             }
         }
         
@@ -179,7 +189,8 @@
                 width: 10%;
                 text-align: center;
                 border-radius: 25px;
-                font-size: small;
+                font-size: 12px;
+                font-weight: 400;
             }
 
             .article-title{
@@ -189,7 +200,8 @@
                     padding-left: 20px;
                     padding-top: 10px;
                     color: variables.$basic-dark-red;
-                    font-weight: bold;
+                    font-weight: 800;
+                    font-size: 18px;
                     margin-top: 185px;
                 }
                 img{
@@ -205,7 +217,8 @@
             }
 
             .manchet{
-                font-size: 13px;
+                font-size: 14px;
+                font-weight: 400;
                 color: variables.$basic-dark-grey;
                 padding-top: 20px;
                 width: 90%;
@@ -222,10 +235,12 @@
             background-image: url("img/section-4-background.png");
             background-size: 100% auto;
             background-repeat: no-repeat;
-            height: 300px;
-
+            min-height: 300px;
+            display: flex;
+            flex-direction: column;
             h1{
-                font-size: 23px;
+                font-size: 25px;
+                font-weight: 800;
                 color: variables.$basic-dark-red;
                 padding-top: 25px;
                 padding-left: 15px;
@@ -235,97 +250,93 @@
                 border-radius: 15px;
                 background-color: variables.$basic-brown-10;
                 padding-top: 5px;
-                padding-bottom: 5px;
+                padding-bottom: 7px;
                 padding-left: 10px;
                 padding-right: 10px;
-                width: 40%;
+                width: 150px;
                 margin-left: 15px;
-
+                margin-top: 15px;
+                display: inline-flex;
+                align-content: center;
+                
                 img{
-                    display: inline-block;
+                    display: inline;
                 }
                 p{
-                    display: inline-block;
+                    display: inline;
                     font-size: 14px;
+                    font-weight: 400;
+                    padding-left: 10px;
+                    color: variables.$basic-dark-red;
                 }
             }
             a{
                 color: variables.$basic-dark-red;
-                font-weight: bold;
-                padding-left: 100px;
-                padding-top: 180px;
                 font-size: 14px;
+                font-weight: 800;
+                align-self: center;
+                margin-top: auto;
+                padding-bottom: 20px;
             }
         }
     }
 
     .section-5{
+        margin-top: 45px;
         h1{
-            font-size: 23px;
+            font-size: 25px;
+            font-weight: 800;
             color: variables.$basic-dark-red;
-            padding-top: 50px;
             padding-left: 20px;
             padding-bottom: 40px;
         }
         .images{
-            display: grid;
-            grid-template-columns: 1fr 1fr 1fr;
+            display: flex;
+            justify-content: space-around;
+            flex-flow: row wrap;
 
             p{
-                font-weight: 500;
+                font-weight: 800;
+                font-size: 16px;
                 padding-left: 25px;
             }
 
             img{
-                border-radius: 50px;
+                border-radius: 65px;
                 box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
             }
             
             .img-1{
-                grid-column-start: 1;
-                grid-column-end: 1;
-                grid-row-start: 1;
-                grid-row-end: 1;
-                padding-left: 40px;
+                padding-left: 20px;
                 padding-top: 20px;
             }
 
             .img-2{
-                grid-column-start: 2;
-                grid-column-end: 2;
-                grid-row-start: 2;
-                grid-row-end: 2;
+                margin-top: auto;
+                padding-top: 150px;
             }
 
             .img-3{
-                grid-column-start: 3;
-                grid-column-end: 3;
-                grid-row-start: 1;
-                grid-row-end: 1;
                 padding-right: 20px;
-
             }
-
         }
+        padding-bottom: 20px;
     }
  
     .footer{
-        border-top: 2px solid variables.$basic-light-grey;
+        border-top: 1px solid variables.$basic-light-grey;
         width: 90%;
         margin-left: 15px;
-        display: grid;
-        grid-template-columns: 1.5fr 1fr 1fr;
-        grid-template-rows: 1fr 0.75fr 0.6fr;
-
+        display: flex;
+        flex-direction: column;
         a{
             color: variables.$basic-dark-grey;
             text-decoration: none;
             font-size: 14px;
+            font-weight: 400;
         }
 
         .grid-1{
-            grid-column: 1 / span 1;
-            grid-row: 1 / span 1;
             padding-top: 30px;
             padding-bottom: 20px;
             img{
@@ -336,26 +347,34 @@
         }
 
         .grid-2{
-            grid-column: 1 / span 1;
-            grid-row: 2 / span 1;
+            .privacy{
+                padding-left: 30px;
+            }
         }
 
         .grid-3{
-            grid-column: 2/ span 1;
-            grid-row: 2 / span 1;
+            padding-top: 10px;
+            .contact{
+                padding-left: 70px;
+            }
         }
 
         .grid-4{
-            grid-column: 1 / span 3;
-            grid-row: 3 / span 1;
-            padding-left: 90px;
+            display: flex;
+            justify-content: center;
+            align-content: center;
+            padding-top: 30px;
+            padding-bottom: 30px;
             img{
-                display: inline;
+                width: 16px;
+                height: 16px;
+                margin-top: auto;
             }
             p{
-                display: inline;
                 font-size: 14px;
                 font-weight: 300;
+                padding-left: 10px;
+                color: variables.$basic-dark-grey;
             }
         }
 
@@ -381,7 +400,7 @@
         .search{
             img{
                 width: 30px;
-                padding-left: 70px;
+                padding-left: 150px;
             }
         }
 
