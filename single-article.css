@@ -18,6 +18,18 @@ section {
   padding: 0 18px;
 }
 
+.cont {
+  margin-top: 24px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#recipe2,
+#article2 {
+  display: none;
+}
+
 .link-red {
   text-decoration: underline;
   color: #d00000;
@@ -99,14 +111,56 @@ section {
   align-items: center;
 }
 
+.article-thumbnail {
+  height: 300px;
+  max-width: 344px;
+  display: flex;
+  background-image: url(https://img.huffingtonpost.com/asset/5fd247b5240000220a9fa0c6.jpeg?ops=scalefit_720_noupscale);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  border-radius: 10px;
+}
+.article-thumbnail .article-title-wrapper {
+  width: 100%;
+  padding: 18px;
+  align-self: flex-end;
+  background: rgba(255, 255, 255, 0.7);
+}
+.article-thumbnail .article-title-wrapper h3 {
+  font-size: 18px;
+  color: #4d0b0b;
+}
+.article-thumbnail .article-title-wrapper p {
+  padding: 0;
+  margin: 0;
+  font-size: 14px;
+  color: #4d4d4d;
+}
+
 @media (min-width: 700px) {
   section {
     padding: 35px 10%;
   }
+
+  .cont {
+    justify-content: space-around;
+  }
+
+  #recipe2 {
+    margin-left: 8px;
+    display: grid;
+  }
+
+  #article2 {
+    width: 344px;
+    margin-left: 8px;
+    display: flex;
+    background-image: url(https://cdn.loveandlemons.com/wp-content/uploads/2018/06/IMG_12572-yellow-cropped2.jpg);
+  }
 }
 @media (min-width: 1200px) {
   section {
-    max-width: 900px;
     padding: 40px 20%;
   }
 }

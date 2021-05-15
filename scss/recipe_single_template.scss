@@ -1,4 +1,4 @@
-@import "variables";
+@import 'variables';
 
 $image-height: 300px;
 $overlay-height: 50px;
@@ -6,10 +6,9 @@ $overlay-height: 50px;
 main {
   max-width: 1280px;
 }
+
 .cont {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  grid-template-rows: auto;
+  // Let's try to style content in each page we add it in seperately
 }
 article.single-recipe-template {
   display: grid;
@@ -99,7 +98,7 @@ article.single-recipe-template {
     }
   }
   .image-link {
-    content: "";
+    content: '';
     width: 100%;
     height: $image-height;
     position: absolute;
