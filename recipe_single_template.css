@@ -1,0 +1,102 @@
+@import url(https://use.typekit.net/rll2ezx.css);
+main {
+  max-width: 1280px;
+}
+
+.cont {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: auto;
+}
+
+article.single-recipe-template {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  grid-template-rows: 300px auto auto;
+  align-items: center;
+  position: relative;
+}
+article.single-recipe-template .image {
+  background-image: url(../img/section-2-background.png);
+  background-position: center;
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+}
+article.single-recipe-template .recipe-label {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  padding: 0.3rem 0.8rem;
+  border-radius: 10px;
+  color: #ffffff;
+  background: rgba(238, 34, 34, 0.3);
+}
+article.single-recipe-template .title-review-container {
+  display: grid;
+  width: 100%;
+  grid-template-columns: 65% 35%;
+  grid-template-rows: 50px;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: calc(300px - 50px);
+  background: rgba(255, 255, 255, 0.7);
+}
+article.single-recipe-template .title-review-container .title-of-recipe {
+  background: #ffffff;
+  height: 100%;
+  width: 100%;
+  border-radius: 0px 20px 0px 0px;
+  display: inline-flex;
+  align-items: center;
+  word-wrap: break-word;
+  overflow: hidden;
+}
+article.single-recipe-template .title-review-container .title-of-recipe h3 {
+  padding-left: 10px;
+}
+article.single-recipe-template .title-review-container .review-rating-recipe {
+  height: 100%;
+  width: 100%;
+  display: grid;
+  justify-content: center;
+  align-items: center;
+}
+article.single-recipe-template .icon-button-container {
+  display: grid;
+  width: 100%;
+  margin-top: 10px;
+  grid-template-columns: 65% 35%;
+  grid-template-rows: 50px;
+  align-items: center;
+}
+article.single-recipe-template .icon-button-container .icons {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: 1fr;
+  align-items: center;
+}
+article.single-recipe-template .icon-button-container a.button {
+  margin: 0;
+  padding: 0;
+  border-radius: 20px;
+  background: #ee2222;
+  color: #ffffff;
+  border: none;
+  filter: drop-shadow(2px 0px 2px rgba(238, 34, 34, 0.3));
+  height: fit-content;
+  padding: 0.5rem 1.25rem;
+  text-decoration: none;
+  text-align: center;
+}
+article.single-recipe-template .image-link {
+  content: "";
+  width: 100%;
+  height: 300px;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+/*# sourceMappingURL=recipe_single_template.css.map */
