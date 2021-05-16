@@ -183,8 +183,19 @@ article.single-recipe-template .image-link {
 }
 
 .filter-expanded {
-  width: 90%;
-  padding-left: 20px;
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  background-color: #ffffff;
+  z-index: 5;
+  top: 0;
+  left: 0;
+}
+.filter-expanded .menu {
+  margin-left: 20px;
+}
+.filter-expanded .container {
+  margin: 0 14px;
 }
 .filter-expanded p {
   color: #4d0b0b;

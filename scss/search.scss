@@ -16,6 +16,16 @@ section {
 
 #page-search {
   form {
+    position: relative;
+    a.amanda-page{
+      content: "";
+      width: 80%;
+      height: 100%;
+      top: 0;
+      right: 0;
+      position: absolute;
+      
+    }
     padding: 45px 17px 17px 17px;
     display: flex;
     align-items: center;
