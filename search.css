@@ -74,6 +74,9 @@ section#search-results {
   border-bottom: 3px solid #ed7321;
 }
 
+#search-results {
+  min-height: 40vh;
+}
 #search-results a {
   text-decoration: none;
 }

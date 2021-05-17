@@ -1,439 +1,444 @@
 @use "variables";
 
-*{
-    margin: 0;
-    font-family: variables.$sofia-pro;
-    
+* {
+  margin: 0;
+  font-family: variables.$sofia-pro;
+}
+body {
+  display: flex;
+  flex-direction: column;
+}
+.read-more-btn {
+  background-color: variables.$main;
+  color: variables.$basic-white;
+  border-radius: 20px;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  border: none;
+  font-size: 12px;
+
+  a {
+    text-decoration: none;
+    color: variables.$basic-white;
+  }
 }
 
-    .read-more-btn{
-        background-color: variables.$main;
+.header {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 10px;
+  width: 100%;
+  .profile {
+    img {
+      border-radius: 20px;
+      width: 40px;
+      height: 40px;
+    }
+    padding-left: 20px;
+    padding-top: 20px;
+  }
+  .logo {
+    img {
+      width: 100px;
+      height: auto;
+    }
+    padding-top: 20px;
+  }
+
+  .menu {
+    margin-left: 20px;
+  }
+  .search-and-menu {
+    padding-right: 20px;
+    padding-top: 25px;
+  }
+}
+.section-1 {
+  background-image: url('img/section-1-background.jpg');
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+  width: 100%;
+  min-height: 298px;
+  .section-text {
+    width: 100%;
+    h2 {
+      font-size: 20px;
+      padding-top: 100px;
+      padding-left: 70px;
+      width: 40%;
+      font-weight: 400;
+    }
+  }
+
+  button {
+    margin-left: 70px;
+    margin-top: 20px;
+    font-weight: 400;
+    font-size: 12px;
+  }
+}
+
+.section-2 {
+  padding-bottom: 50px;
+  h1 {
+    color: variables.$basic-dark-red;
+    padding-top: 30px;
+    padding-left: 18px;
+    padding-bottom: 30px;
+    font-size: 25px;
+    font-weight: 800;
+  }
+
+  .flex-container {
+    display: flex;
+    justify-content: center;
+
+    .background {
+      background-image: url('img/section-2-background.png');
+      background-size: 100% auto;
+      background-repeat: no-repeat;
+      width: 90%;
+      height: auto;
+      padding-top: 5px;
+
+      .recipe-label {
+        background-color: variables.$main-red-30;
         color: variables.$basic-white;
-        border-radius: 20px;
-        padding-left: 20px;
-        padding-right: 20px;
+        margin-left: 10px;
+        margin-top: 5px;
+        padding-left: 5px;
+        padding-right: 5px;
         padding-top: 8px;
-        padding-bottom:8px;
-        border: none;
+        padding-bottom: 8px;
+        width: 10%;
+        text-align: center;
+        border-radius: 25px;
         font-size: 12px;
+        font-weight: 400;
+      }
 
-        a{
-            text-decoration: none;
-            color: variables.$basic-white;
+      .grid-view {
+        display: grid;
+        grid-template-columns: 4fr 2fr;
+      }
+
+      .recipe-white-box {
+        background-color: variables.$basic-white;
+        margin-top: 200px;
+        border-radius: 0px 20px 0px 0px;
+
+        .recipe-title {
+          padding-top: 10px;
+          font-weight: 800;
+          font-size: 18px;
         }
-    }
+        .recipe-diet {
+          color: variables.$basic-light-grey;
+          font-size: 10px;
+          font-weight: 400;
+        }
+      }
 
-    .header{
-        display: flex;
-        justify-content: space-between;
+      .ratings {
+        margin-top: 200px;
+        background-color: variables.$see-through;
+        padding-left: 10px;
+        padding-right: 10px;
+        padding-top: 10px;
         padding-bottom: 10px;
-        width: 100%;
-        .profile{
-            img{
-                border-radius: 20px;
-                width: 40px;
-                height: 40px;
-            }
-            padding-left: 20px;
-            padding-top: 20px;
-        }
-        .logo{
-            img{
-                width: 100px;
-                height: auto;
-            }
-            padding-top: 20px;
-        }
-
-        .menu{
-            margin-left: 20px;
-        }
-        .search-and-menu{
-            padding-right: 20px;
-            padding-top: 25px;
-        }
-      
+        text-align: center;
+        font-weight: 400;
+        font-size: 13px;
+      }
     }
-    .section-1{
-        background-image: url("img/section-1-background.jpg");
-        background-size: 100% auto;
-        background-repeat: no-repeat;
-        width: 100%;
-        min-height: 298px;
-        .section-text{
-            width: 100%;
-            h2{
-                font-size: 20px;
-                padding-top: 100px;
-                padding-left: 70px;
-                width: 40%;
-                font-weight: 400;
-            }
-        }
+  }
 
-        button{
-            margin-left: 70px;
-            margin-top: 20px;
-            font-weight: 400;
-            font-size: 12px;
-        }
+  .last-section-recipe {
+    background-color: variables.$basic-white;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 2fr;
+    width: 90%;
+    margin-left: 19px;
+    padding-top: 5px;
+
+    img {
+      width: 45px;
+      height: auto;
     }
 
-    .section-2{
-        padding-bottom: 50px;
-        h1{
-            color: variables.$basic-dark-red;
-            padding-top: 30px;
-            padding-left: 18px;
-            padding-bottom: 30px;
-            font-size: 25px;
-            font-weight: 800;
-        }
+    button {
+      box-shadow: rgba(0, 0, 0, 0.25) 0px 4px 4px 0px;
 
-        .flex-container{
-            display: flex;
-            justify-content: center;
-
-            .background{
-                background-image: url("img/section-2-background.png");
-                background-size: 100% auto;
-                background-repeat: no-repeat;
-                width: 90%;
-                height: auto;
-                padding-top: 5px;
-    
-                .recipe-label{
-                    background-color: variables.$main-red-30;
-                    color: variables.$basic-white;
-                    margin-left: 10px;
-                    margin-top: 5px;
-                    padding-left: 5px;
-                    padding-right: 5px;
-                    padding-top: 8px;
-                    padding-bottom: 8px;
-                    width: 10%;
-                    text-align: center;
-                    border-radius: 25px;
-                    font-size: 12px;
-                    font-weight: 400;
-                }
-    
-                .grid-view{
-                    display: grid;
-                    grid-template-columns: 4fr 2fr;
-                }
-    
-                .recipe-white-box{
-                    background-color: variables.$basic-white;
-                    margin-top: 200px;
-                    border-radius: 0px 20px 0px 0px;
-    
-                    .recipe-title{
-                        padding-top: 10px;
-                        font-weight: 800;
-                        font-size: 18px;
-                    }
-                    .recipe-diet{
-                        color: variables.$basic-light-grey;
-                        font-size: 10px;
-                        font-weight: 400;
-                    }
-                }
-    
-                .ratings{
-                    margin-top: 200px;
-                    background-color: variables.$see-through;
-                    padding-left: 10px;
-                    padding-right: 10px;
-                    padding-top: 10px;
-                    padding-bottom: 10px;
-                    text-align: center;
-                    font-weight: 400;
-                    font-size: 13px;
-                }
-            }
-        }
-      
-
-        .last-section-recipe{
-            background-color: variables.$basic-white;
-            display: grid;
-            grid-template-columns: 1fr 1fr 1fr 2fr;
-            width: 90%;
-            margin-left: 19px;
-            padding-top: 5px;
-
-            img{
-                width: 45px;
-                height: auto;
-            }
-
-            button{
-                box-shadow: rgba(0, 0, 0, 0.25) 0px 4px 4px 0px;
-
-            a{
-                text-decoration: none;
-                color: variables.$basic-white;
-            }
-            }
-        }
-        
+      a {
+        text-decoration: none;
+        color: variables.$basic-white;
+      }
     }
-
-    .section-3{
-        .background{
-            background-image: url("img/section-2-background.png");
-            background-size: 100% auto;
-            background-repeat: no-repeat;
-            width: 90%;
-            margin-left: 19px;
-            height: auto;
-            padding-top: 5px;
-            border-radius: 12px;
-
-            .article-label{
-                background-color: variables.$accent-green-10;
-                color: variables.$basic-white;
-                margin-left: 10px;
-                margin-top: 5px;
-                padding-left: 12px;
-                padding-right: 12px;
-                padding-top: 8px;
-                padding-bottom: 8px;
-                width: 10%;
-                text-align: center;
-                border-radius: 25px;
-                font-size: 12px;
-                font-weight: 400;
-            }
-
-            .article-title{
-                background-color: variables.$see-through-2;
-                .title{
-                    width: 80%;
-                    padding-left: 20px;
-                    padding-top: 10px;
-                    color: variables.$basic-dark-red;
-                    font-weight: 800;
-                    font-size: 18px;
-                    margin-top: 185px;
-                }
-                img{
-                    display: inline;
-                    padding-left: 20px;
-                }
-
-                .minutes{
-                    display: inline;
-                    font-size: 9px;
-                }
-
-            }
-
-            .manchet{
-                font-size: 14px;
-                font-weight: 400;
-                color: variables.$basic-dark-grey;
-                padding-top: 20px;
-                width: 90%;
-                padding-bottom: 25px;
-            }
-
-            button{
-                a{
-                    text-decoration: none;
-                    color: variables.$basic-white;
-                }
-            }
-        }
-    }
-
-    .section-4{
-        width: 100%;
-        padding-top: 50px;
-
-        .background{
-            background-image: url("img/section-4-background.png");
-            background-size: 100% auto;
-            background-repeat: no-repeat;
-            min-height: 300px;
-            display: flex;
-            flex-direction: column;
-            h1{
-                font-size: 25px;
-                font-weight: 800;
-                color: variables.$basic-dark-red;
-                padding-top: 25px;
-                padding-left: 15px;
-            }
-
-            .apricots{
-                border-radius: 15px;
-                background-color: variables.$basic-brown-10;
-                padding-top: 5px;
-                padding-bottom: 7px;
-                padding-left: 10px;
-                padding-right: 10px;
-                width: 150px;
-                margin-left: 15px;
-                margin-top: 15px;
-                display: inline-flex;
-                align-content: center;
-                
-                img{
-                    display: inline;
-                }
-                p{
-                    display: inline;
-                    font-size: 14px;
-                    font-weight: 400;
-                    padding-left: 10px;
-                    color: variables.$basic-dark-red;
-                }
-            }
-            a{
-                color: variables.$basic-dark-red;
-                font-size: 14px;
-                font-weight: 800;
-                align-self: center;
-                margin-top: auto;
-                padding-bottom: 20px;
-            }
-        }
-    }
-
-    .section-5{
-        margin-top: 45px;
-        h1{
-            font-size: 25px;
-            font-weight: 800;
-            color: variables.$basic-dark-red;
-            padding-left: 20px;
-            padding-bottom: 40px;
-        }
-        .images{
-            display: flex;
-            justify-content: space-around;
-            flex-flow: row wrap;
-
-            p{
-                font-weight: 800;
-                font-size: 16px;
-                padding-left: 25px;
-            }
-
-            img{
-                border-radius: 65px;
-                box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-            }
-            
-            .img-1{
-                padding-left: 20px;
-                padding-top: 20px;
-            }
-
-            .img-2{
-                margin-top: auto;
-                padding-top: 150px;
-            }
-
-            .img-3{
-                padding-right: 20px;
-            }
-        }
-        padding-bottom: 20px;
-    }
- 
-    .footer{
-        border-top: 1px solid variables.$basic-light-grey;
-        width: 90%;
-        margin-left: 15px;
-        display: flex;
-        flex-direction: column;
-        margin-top: 20px;
-        a{
-            color: variables.$basic-dark-grey;
-            text-decoration: none;
-            font-size: 14px;
-            font-weight: 400;
-        }
-
-        .grid-1{
-            padding-top: 30px;
-            padding-bottom: 20px;
-            img{
-                padding-right: 20px;
-                width: 30px;
-                height: auto;
-            }
-        }
-
-        .grid-2{
-            .privacy{
-                padding-left: 30px;
-            }
-        }
-
-        .grid-3{
-            padding-top: 10px;
-            .contact{
-                padding-left: 70px;
-            }
-        }
-
-        .grid-4{
-            display: flex;
-            justify-content: center;
-            align-content: center;
-            padding-top: 30px;
-            padding-bottom: 30px;
-            img{
-                width: 16px;
-                height: 16px;
-                margin-top: auto;
-            }
-            p{
-                font-size: 14px;
-                font-weight: 300;
-                padding-left: 10px;
-                color: variables.$basic-dark-grey;
-            }
-        }
-
-    }
-
-
-@media(min-width: variables.$tablet){
-    .frontpage{
-    .header{
-        .profile{
-            img{
-                width: 50px;
-                height: auto;
-                border-radius: 50px;
-            }
-        }
-        .logo{
-            img{
-                width: 150px;
-            }
-        }
-
-        .search{
-            img{
-                width: 30px;
-                padding-left: 150px;
-            }
-        }
-
-        .menu{
-            img{
-                padding-left: 50px;
-                width: 50px;
-                height: auto;
-            }
-            padding-top: 35px;
-        }
-    }
+  }
 }
+
+.section-3 {
+  .background {
+    background-image: url('img/section-2-background.png');
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+    width: 90%;
+    margin-left: 19px;
+    height: auto;
+    padding-top: 5px;
+    border-radius: 12px;
+
+    .article-label {
+      background-color: variables.$accent-green-10;
+      color: variables.$basic-white;
+      margin-left: 10px;
+      margin-top: 5px;
+      padding-left: 12px;
+      padding-right: 12px;
+      padding-top: 8px;
+      padding-bottom: 8px;
+      width: 10%;
+      text-align: center;
+      border-radius: 25px;
+      font-size: 12px;
+      font-weight: 400;
+    }
+
+    .article-title {
+      background-color: variables.$see-through-2;
+      .title {
+        width: 80%;
+        padding-left: 20px;
+        padding-top: 10px;
+        color: variables.$basic-dark-red;
+        font-weight: 800;
+        font-size: 18px;
+        margin-top: 185px;
+      }
+      img {
+        display: inline;
+        padding-left: 20px;
+      }
+
+      .minutes {
+        display: inline;
+        font-size: 9px;
+      }
+    }
+
+    .manchet {
+      font-size: 14px;
+      font-weight: 400;
+      color: variables.$basic-dark-grey;
+      padding-top: 20px;
+      width: 90%;
+      padding-bottom: 25px;
+    }
+
+    button {
+      a {
+        text-decoration: none;
+        color: variables.$basic-white;
+      }
+    }
+  }
+}
+
+.section-4 {
+  width: 100%;
+  padding-top: 50px;
+
+  .background {
+    background-image: url('img/section-4-background.png');
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+    min-height: 300px;
+    display: flex;
+    flex-direction: column;
+    h1 {
+      font-size: 25px;
+      font-weight: 800;
+      color: variables.$basic-dark-red;
+      padding-top: 25px;
+      padding-left: 15px;
+    }
+
+    .apricots {
+      border-radius: 15px;
+      background-color: variables.$basic-brown-10;
+      padding-top: 5px;
+      padding-bottom: 7px;
+      padding-left: 10px;
+      padding-right: 10px;
+      width: 150px;
+      margin-left: 15px;
+      margin-top: 15px;
+      display: inline-flex;
+      align-content: center;
+
+      img {
+        display: inline;
+      }
+      p {
+        display: inline;
+        font-size: 14px;
+        font-weight: 400;
+        padding-left: 10px;
+        color: variables.$basic-dark-red;
+      }
+    }
+    a {
+      color: variables.$basic-dark-red;
+      font-size: 14px;
+      font-weight: 800;
+      align-self: center;
+      margin-top: auto;
+      padding-bottom: 20px;
+    }
+  }
+}
+
+.section-5 {
+  margin-top: 45px;
+  h1 {
+    font-size: 25px;
+    font-weight: 800;
+    color: variables.$basic-dark-red;
+    padding-left: 20px;
+    padding-bottom: 40px;
+  }
+  .images {
+    display: flex;
+    justify-content: space-around;
+    flex-flow: row wrap;
+
+    p {
+      font-weight: 800;
+      font-size: 16px;
+      padding-left: 25px;
+    }
+
+    img {
+      border-radius: 65px;
+      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2),
+        0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    }
+
+    .img-1 {
+      padding-left: 20px;
+      padding-top: 20px;
+    }
+
+    .img-2 {
+      margin-top: auto;
+      padding-top: 150px;
+    }
+
+    .img-3 {
+      padding-right: 20px;
+    }
+  }
+  padding-bottom: 20px;
+}
+
+.footer {
+  width: 100%;
+  border-top: 1px solid variables.$basic-light-grey;
+  padding: 30px 16px 0px 16px;
+  display: flex;
+  flex-direction: column;
+  margin-top: 100px;
+
+  a {
+    color: variables.$basic-dark-grey;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 400;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+
+  .grid-1 {
+    padding-top: 30px;
+    padding-bottom: 20px;
+    img {
+      margin: 0;
+      width: 30px;
+      height: auto;
+      &:nth-child(1) {
+        margin-right: 24px;
+      }
+    }
+  }
+
+  .grid-2 {
+    .privacy {
+      padding-left: 30px;
+    }
+  }
+
+  .grid-3 {
+    padding-top: 10px;
+    .contact {
+      padding-left: 70px;
+    }
+  }
+
+  .grid-4 {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    img {
+      width: 16px;
+      height: 16px;
+      margin-top: auto;
+    }
+    p {
+      font-size: 14px;
+      font-weight: 300;
+      padding-left: 10px;
+      color: variables.$basic-dark-grey;
+    }
+  }
+}
+
+@media (min-width: variables.$tablet) {
+  .frontpage {
+    .header {
+      .profile {
+        img {
+          width: 50px;
+          height: auto;
+          border-radius: 50px;
+        }
+      }
+      .logo {
+        img {
+          width: 150px;
+        }
+      }
+
+      .search {
+        img {
+          width: 30px;
+          padding-left: 150px;
+        }
+      }
+
+      .menu {
+        img {
+          padding-left: 50px;
+          width: 50px;
+          height: auto;
+        }
+        padding-top: 35px;
+      }
+    }
+  }
 }
