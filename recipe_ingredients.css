@@ -8,11 +8,6 @@
 body {
   width: 100%;
   min-height: 100vh;
-<<<<<<< HEAD
-  display: flex;
-  flex-direction: column;
-=======
->>>>>>> bf36ed7a0d3afcc6d7534f7bcacced683e4a4a3f
 }
 
 .devider {
