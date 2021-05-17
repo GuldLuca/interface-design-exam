@@ -16,10 +16,15 @@
   padding: 20px;
 }
 #save-to-cookbook .all-cookbooks .cookbook {
+  text-decoration: none;
+  color: #4d0b0b;
   margin-top: 30px;
   display: flex;
   flex-direction: row;
   align-items: center;
+}
+#save-to-cookbook .all-cookbooks .cookbook p {
+  color: #949494;
 }
 #save-to-cookbook .all-cookbooks .cookbook .image-placeholder {
   background: rgba(77, 11, 11, 0.1);

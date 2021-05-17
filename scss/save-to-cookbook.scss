@@ -16,10 +16,15 @@
   .all-cookbooks {
     padding: 20px;
     .cookbook {
+      text-decoration: none;
+      color: variables.$basic-dark-red;
       margin-top: 30px;
       display: flex;
       flex-direction: row;
       align-items: center;
+      p {
+        color: variables.$basic-light-grey;
+      }
       .image-placeholder {
         background: variables.$basic-brown-10;
         border-radius: 10px;
