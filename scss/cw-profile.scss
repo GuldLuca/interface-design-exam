@@ -61,7 +61,7 @@ main#cw-profile {
       font-size: 20px;
       color: variables.$basic-dark-grey;
     }
-    button {
+    a.button {
       background-color: variables.$main;
       width: 150px;
       height: 60px;
@@ -69,6 +69,10 @@ main#cw-profile {
       border: none;
       color: variables.$basic-white;
       font-size: 20px;
+      text-decoration: none;
+      display: flex;
+      justify-content: center;
+      align-items: center;
     }
   }
   table {

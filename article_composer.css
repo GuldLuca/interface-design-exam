@@ -23,6 +23,13 @@ header .header-container .profile {
   height: 4vh;
   display: flex;
   align-items: center;
+  position: relative;
+}
+header .header-container .profile a.back-to-profile {
+  width: 100%;
+  height: 100%;
+  content: "";
+  position: absolute;
 }
 header .header-container .profile i {
   cursor: pointer;
