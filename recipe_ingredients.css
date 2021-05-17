@@ -203,6 +203,7 @@ section.single-recipe .middle-container {
   margin: 0 14px;
 }
 section.single-recipe .middle-container .about-container {
+  position: relative;
   display: block;
 }
 section.single-recipe .middle-container .about-container .labels {

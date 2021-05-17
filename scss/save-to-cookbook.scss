@@ -1,0 +1,64 @@
+@use "variables";
+
+#save-to-cookbook {
+  position: relative;
+  min-height: 100vh;
+  .top-section {
+    display: flex;
+    padding: 20px;
+    border-bottom: 1px solid rgba(77, 11, 11, 0.1);
+
+    #save-recipe-text {
+      margin-left: auto;
+      margin-right: auto;
+    }
+  }
+  .all-cookbooks {
+    padding: 20px;
+    .cookbook {
+      margin-top: 30px;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      .image-placeholder {
+        background: variables.$basic-brown-10;
+        border-radius: 10px;
+        width: 40px;
+        height: 40px;
+      }
+      .cookbook-name {
+        margin-left: 10px;
+      }
+    }
+  }
+
+  .create-new-cookbook {
+    background: variables.$basic-white;
+    box-shadow: 4px 0px 15px rgba(0, 0, 0, 0.25);
+    height: 75px;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    img {
+      padding: 20px;
+    }
+    p {
+      margin-left: 10px;
+    }
+  }
+  @media (min-width: variables.$desktop) {
+    min-height: 400px;
+    width: 400px;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    /* bring your own prefixes */
+    transform: translate(-50%, -50%);
+    background: variables.$basic-white;
+    box-shadow: 4px 0px 15px rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+  }
+}

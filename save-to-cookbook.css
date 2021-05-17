@@ -1,0 +1,65 @@
+@import url(https://use.typekit.net/rll2ezx.css);
+#save-to-cookbook {
+  position: relative;
+  min-height: 100vh;
+}
+#save-to-cookbook .top-section {
+  display: flex;
+  padding: 20px;
+  border-bottom: 1px solid rgba(77, 11, 11, 0.1);
+}
+#save-to-cookbook .top-section #save-recipe-text {
+  margin-left: auto;
+  margin-right: auto;
+}
+#save-to-cookbook .all-cookbooks {
+  padding: 20px;
+}
+#save-to-cookbook .all-cookbooks .cookbook {
+  margin-top: 30px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+#save-to-cookbook .all-cookbooks .cookbook .image-placeholder {
+  background: rgba(77, 11, 11, 0.1);
+  border-radius: 10px;
+  width: 40px;
+  height: 40px;
+}
+#save-to-cookbook .all-cookbooks .cookbook .cookbook-name {
+  margin-left: 10px;
+}
+#save-to-cookbook .create-new-cookbook {
+  background: #ffffff;
+  box-shadow: 4px 0px 15px rgba(0, 0, 0, 0.25);
+  height: 75px;
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+#save-to-cookbook .create-new-cookbook img {
+  padding: 20px;
+}
+#save-to-cookbook .create-new-cookbook p {
+  margin-left: 10px;
+}
+@media (min-width: 1200px) {
+  #save-to-cookbook {
+    min-height: 400px;
+    width: 400px;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    /* bring your own prefixes */
+    transform: translate(-50%, -50%);
+    background: #ffffff;
+    box-shadow: 4px 0px 15px rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+  }
+}
+
+/*# sourceMappingURL=save-to-cookbook.css.map */
