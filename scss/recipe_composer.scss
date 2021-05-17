@@ -1,0 +1,280 @@
+@use "variables";
+@use "general";
+
+main#recipe_composer {
+  width: 100%;
+  max-width: 900px;
+  margin: 0 auto;
+
+  .composer-container {
+    textarea.title {
+      padding: 0;
+      border: none;
+      background: none;
+      min-height: 100px;
+      outline: 0px none transparent;
+      font-size: 3rem;
+      font-weight: bold;
+      text-transform: capitalize;
+      color: variables.$basic-dark-red;
+      &:focus {
+        border: none;
+      }
+      &::placeholder {
+        font-weight: bold;
+        font-size: 3rem;
+        color: variables.$basic-dark-red;
+      }
+    }
+    filter: drop-shadow(0 1px 4px rgba(0, 0, 0, 0.342));
+    margin-bottom: 200px;
+    margin-top: 50px;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: auto;
+    border: 2px solid variables.$basic-brown-10;
+    background: variables.$basic-white;
+    h1,
+    h2,
+    h3 {
+      color: variables.$basic-dark-red;
+    }
+
+    i:hover {
+      color: variables.$alert-yellow;
+    }
+    fieldset {
+      legend {
+        text-align: left;
+        margin-left: 0px;
+        padding: 0 5px;
+      }
+      h2 {
+        margin: 0 5px;
+      }
+      h4 {
+        margin-bottom: 10px;
+      }
+
+      padding: 2rem;
+      padding-top: 3rem;
+      padding-bottom: 5rem;
+      border: 2px solid variables.$basic-brown-10;
+      border-bottom: none;
+      border-left: none;
+      border-right: none;
+    }
+    .flex {
+      display: flex;
+      flex-wrap: nowrap;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+      &.long {
+        width: 100%;
+      }
+      &.left {
+        justify-content: flex-start;
+      }
+    }
+
+    .flex-column {
+      display: flex;
+      flex-direction: column;
+      flex-wrap: nowrap;
+      width: 100%;
+    }
+    .bold {
+      font-weight: bold;
+    }
+    i.yellow {
+      margin-right: 10px;
+      width: 40px;
+      height: 40px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: row;
+      border: 3px solid variables.$alert-yellow;
+      color: variables.$alert-yellow;
+      border-radius: 50%;
+      cursor: pointer;
+      &:hover {
+        color: variables.$main;
+        border-color: variables.$main;
+      }
+    }
+    .section {
+      &:first-child {
+        padding: 2rem;
+        padding-bottom: 4rem;
+      }
+
+      .content {
+        display: flex;
+        align-items: center;
+        &.grid {
+          display: grid;
+          grid-template-columns: 70% 30%;
+
+          .utensils-container {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            grid-template-rows: auto;
+            grid-gap: 15px;
+            justify-content: center;
+            align-items: center;
+            .single-utensil {
+              display: flex;
+              flex-wrap: nowrap;
+              flex-direction: row;
+              align-items: center;
+              p {
+                margin: 0 8px;
+              }
+              input {
+                position: relative;
+                top: 3px;
+              }
+            }
+
+            i {
+              width: 40px;
+              height: 40px;
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              flex-direction: row;
+
+              background: variables.$main-red-30;
+              color: variables.$basic-white;
+              border-radius: 50%;
+              cursor: pointer;
+              &.yellow-b {
+                background: variables.$alert-yellow;
+              }
+              &.green-b {
+                background: variables.$accent-green;
+              }
+            }
+          }
+        }
+      }
+
+      &:first-child {
+        border: none;
+      }
+    }
+    .ml-20 {
+      margin-left: 20px;
+    }
+    .background {
+      background: #4d0b0b10;
+      padding: 2rem;
+      border-radius: 10px 10px 0px 0px;
+      padding-bottom: 6rem;
+    }
+    .m-0 {
+      margin: 0;
+      padding-left: 10px;
+    }
+    .up {
+      align-self: flex-start;
+    }
+    .button {
+      border: 1px solid variables.$basic-light-grey;
+      padding: 1rem;
+      margin-right: 10px;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+
+      &.no-margin {
+        margin: 0;
+        border-right: none;
+      }
+      i {
+        padding-left: 5rem;
+        &.m-0 {
+          margin: 0;
+          padding-left: 5px;
+        }
+        &.down-5 {
+          position: relative;
+          top: 4px;
+        }
+      }
+
+      &.yellow {
+        color: variables.$basic-white;
+        background: variables.$alert-yellow;
+        padding: 1rem;
+        border-radius: 10px;
+        border: none;
+        &:hover {
+          background: variables.$main;
+        }
+      }
+      &.long {
+        border: 1px solid variables.$basic-brown-10;
+        resize: none;
+        height: 54px;
+
+        padding: 1rem;
+        width: 100%;
+      }
+      &.pr-20 {
+        padding-right: 100px;
+      }
+    }
+
+    i.li {
+      margin-right: 5px;
+    }
+    i.li,
+    p.li {
+      color: variables.$basic-light-grey;
+      font-size: 12px;
+    }
+
+    .pr-20 {
+      padding-right: 20px;
+    }
+    .mt-20 {
+      margin-top: 20px;
+    }
+    textarea {
+      border: 1px solid variables.$basic-brown-10;
+      resize: none;
+      width: 100%;
+      height: 54px;
+      padding: 1rem;
+      width: 100%;
+      &.method {
+        background: rgba(255, 255, 255, 0.253);
+      }
+
+      &.big {
+        min-height: 150px;
+        resize: none;
+      }
+    }
+  }
+  .mt-20 {
+    margin-top: 20px;
+  }
+
+  .label {
+    padding: 0.3rem 1.25rem;
+    border: 1px solid variables.$basic-light-grey;
+    color: variables.$basic-light-grey;
+    border-radius: 5px;
+    margin-right: 15px;
+    font-size: 12px;
+    cursor: pointer;
+    &.active {
+      border-color: variables.$accent-green;
+      background: variables.$accent-green-10;
+    }
+  }
+}

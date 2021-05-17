@@ -6,55 +6,70 @@
 }
 
 header {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
   border-bottom: 1px solid #949494;
+}
+header .header-container {
+  display: grid;
+  grid-template-columns: 30% 70%;
   grid-template-rows: 1fr;
   align-items: center;
-  min-height: 7vh;
-  max-height: 7vh;
+  max-width: 1200px;
+  margin: 0 auto;
+  min-height: 8vh;
+  max-height: 8vh;
   padding: 0 1rem;
 }
-header .profile {
+header .header-container .profile {
   height: 4vh;
+  display: flex;
+  align-items: center;
 }
-header img {
+header .header-container .profile i {
+  cursor: pointer;
+  margin-left: 1px;
+  font-size: 12px;
+  color: #4d4d4d;
+}
+header .header-container img {
   height: 100%;
   width: auto;
 }
-header .options {
+header .header-container .options {
   justify-self: end;
 }
-header .options button {
-  padding: 0.5rem 1.5rem;
-  margin-left: 10px;
+header .header-container .options a {
+  margin-left: 15px;
   border-radius: 10px;
+  text-decoration: none;
   cursor: pointer;
   font-weight: bold;
   border: none;
   background: none;
+  color: #4d4d4d;
 }
-header .options button:hover {
-  text-decoration: underline;
+header .header-container .options a:hover {
+  color: black;
 }
-header .options button:nth-child(3) {
+header .header-container .options a:nth-child(3) {
   background: none;
   border: 1px solid #ee2222;
   color: #ee2222;
+  padding: 0.5rem 1.25rem;
 }
-header .options button:nth-child(3):hover {
+header .header-container .options a:nth-child(3):hover {
   background: #ee2222;
   color: #ffffff;
   text-decoration: none;
 }
-header .options button:last-child {
+header .header-container .options a:last-child {
   background: #ee2222;
   color: #ffffff;
+  padding: 0.5rem 1.25rem;
+  border: 1px solid #ee2222;
 }
-header .options button:last-child:hover {
+header .header-container .options a:last-child:hover {
   background: #ffffff;
   color: #ee2222;
-  text-decoration: underline;
 }
 
 #article_composer {

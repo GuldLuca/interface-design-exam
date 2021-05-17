@@ -1,75 +1,212 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <link rel="stylesheet" href="../article_composer.css" />
+    <link rel="stylesheet" href="../recipe_composer.css" />
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
         integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
 </head>
-
 <body>
     <header>
-        <div class="profile">
-            <img src="../img/profile2.png" alt="profile image">
-            
-        </div>
-
-        <div class="options">
-            <button class="clear">
-                Request review
-            </button>
-            <button class="clear">
-                Save draft
-            </button>
-            <button >
-                Preview
-            </button>
-            <button >
-                Publish
-            </button>
+        <div class="header-container">
+            <div class="profile">
+                <img src="../img/writer.jpg" alt="profile image">
+                <i class="fas fa-chevron-down"></i>
+            </div>
+            <div class="options">
+                <a href="#" class="clear">
+                    Request review
+                </a>
+                <a href="#" class="clear">
+                    Save draft
+                </a>
+                <a href="#">
+                    Preview
+                </a>
+                <a href="#">
+                    Publish
+                </a>
+            </div>
         </div>
     </header>
     <main id="recipe_composer">
-        
-  
-        <div class="container header">
-            <h1>Add Title</h1>
-            <h3>Add Description</h3>
-            <div class="reading-time"><i class="far fa-clock"></i> Estimated reading time</div>
-        </div>
-
-        <div class="composer-module">
-            <a href="article_composer_headings.html" class="add-element">
-                +
-            </a>
-            <div class="composer-header">
-                <i class="fas fa-bold"></i>
-                <i class="fas fa-italic"></i>
-                <i class="fas fa-underline"></i>
-                <i class="fas fa-strikethrough"></i>
-                <i class="fas fa-font"></i>
-                <i class="fas fa-paint-brush"></i>
-                <i class="far fa-smile-beam"></i>
-                <i class="fas fa-list-ul"></i>
-                <i class="fas fa-list-ol"></i>
-                <i class="fas fa-indent"></i>
-                <i class="fas fa-align-left"></i>
-                <i class="fas fa-align-center"></i>
-                <i class="fas fa-align-right"></i>
-                <i class="fas fa-align-justify"></i>
+        <div class="composer-container">
+            <div class="section">
+                <textarea class="title" placeholder="Add Title" onfocus="this.placeholder = ''"
+                onblur="this.placeholder = 'Add Title'" name="" id="" cols="30" rows="10"></textarea>
             </div>
-            <div class="text">
-
-                <textarea name="" id="" cols="32" 
-                placeholder="&#8592; Add element "></textarea>
+            <div class="section">
+                <fieldset>
+                    <legend>
+                        <h2>Images</h2>
+                    </legend>
+                    <div class="content">
+                        <div class="flex">
+                            <i class="fas fa-plus yellow"></i>
+                            <p class="bold">Upload</p>
+                        </div>
+                    </div>
+                </fieldset>
             </div>
+            <div class="section">
+                <fieldset>
+                    <legend>
+                        <h2>Description</h2>
+                    </legend>
+                    <div class="content">
+                        <div class="flex">
+                            <div class="button">
+                                <span>Category</span>
+                                <i class="fas fa-chevron-down"></i>
+                            </div>
+                            <div class="button">Time</div>m
+                            <div class="button ml-20">Serves</div>
+                            <div class="button">
+                                <span>Difficulty</span>
+                                <i class="fas fa-chevron-down"></i>
+                            </div>
+                        </div>
+                    </div>
+                </fieldset>
+            </div>
+            <div class="section">
+                <fieldset>
+                    <legend>
+                        <h2>About the bake</h2>
+                    </legend>
+                    <div class="content">
+                        <div class="flex-column">
+                     <div class="flex left">
+                         <i class="fas fa-circle li"></i><p class="li">Make sure to include a concise description about the bake</p>
+                        </div>
+                        <div class="flex left">
+                            <i class="fas fa-circle li"></i><p class="li ">Other Rule</p>
+                        </div>
+                            <textarea class="mt-20 big" name="" id="" cols="30" rows="50"></textarea>
+                        </div>
+                    </div>
+                </fieldset>
+            </div>
+            <div class="section">
+                <fieldset>
+                    <legend>
+                        <h2>Bonus Tips</h2>
+                    </legend>
+                    <div class="content">
+                        <div class="flex long">
+                            <textarea class="button long"> </textarea>
+                            <div class="button yellow">Add</div>
+                        </div>
+                    </div>
+                </fieldset>
+            </div>
+            <div class="section">
+                <fieldset>
+                    <legend>
+                        <h2>Dietary Restrictions</h2>
+                    </legend>
+                    <div class="content">
+                        <div class="flex">
+                            <div class="label active">Vegan</div>
+                            <div class="label active">Vegetarian</div>
+                            <div class="label">Reduced Sugar</div>
+                            <div class="label">Egg free</div>
+                            <div class="label">Extra sugar</div>
+                            <i class="fas fa-plus yellow"></i>
+                        </div>
+                    </div>
+                </fieldset>
+            </div>
+            <div class="section">
+                <fieldset>
+                    <legend>
+                        <h2>Ingredients</h2>
+                    </legend>
+                    <div class="background">
+                    <h4>For the base</h4>
+                    <div class="content">
+                        <div class="flex left long">
+                            <div class="button no-margin pr-20">Amount</div>
+                            <div class="button ">g<i class="fas fa-chevron-down m-0 down-5"></i></div>
+                            <div class="button ml-20 pr-20">Ingredient</div>
+                            <div class="button pr-20"> Notes</div>
+                            <div class="button yellow">Add</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="flex left long mt-20">
+                    <i class="fas fa-plus yellow "></i> <p>New ingredient</p>
+                </div>
+                </fieldset>
+            </div>
+            <div class="section">
+                <fieldset>
+                    <legend>
+                        <h2>Method & Steps</h2>
+                    </legend>
+                    <div class="flex left">
+                        <i class="fas fa-circle li"></i><p class="li">Make sure to answer the user might have about the method</p>
+                       </div>
+                       <div class="flex left">
+                        <i class="fas fa-circle li"></i><p class="li">Other rule</p>
+                       </div>
+                    <div class="background mt-20">
+                    <h4>Step 1:</h4>
+                    <div class="content">
+                        <div class="flex-column">
 
-     
+                            <div class="flex left long">
+                                <div class="button">
+                                    <span>Choose Ingredient</span>
+                                    <i class="fas fa-chevron-down"></i>
+                                </div>
+                            </div>
+                            <textarea class="method big mt-20" name="" id="" cols="30" rows="10" placeholder="Type here..."></textarea>
+                        </div>
+                    </div>
+                </div>
+                <div class="flex left long mt-20">
+                <i class="fas fa-plus yellow "></i> <p>New step</p>
+                </div>
+                </fieldset>
+            </div>
+            <div class="section">
+                <fieldset>
+                    <legend>
+                        <h2>Utensils</h2>
+                    </legend>
+                    <div class="content grid">
+                        <div class="utensils-container">
+                            <div class="single-utensil">
+                                <i class="fas fa-microchip"></i> <p>Food processor</p> <input type="checkbox">
+                            </div>
+                            <div class="single-utensil">
+                                <i class="fas fa-mortar-pestle"></i> <p>Mixing Bowl</p> <input type="checkbox">
+                            </div>
+                            <div class="single-utensil">
+                                <i class="fas fa-mortar-pestle"></i> <p>Large Mixing Bowl</p> <input type="checkbox">
+                            </div>
+                            <div class="single-utensil">
+                  
+                                <i class="fas fa-utensils green-b"></i> <p>Sharp Knife</p> <input type="checkbox">
+                            </div>
+                            <div class="single-utensil">
+                                <i class="fas fa-plug yellow-b"></i> <p>Blender</p> <input type="checkbox">
+                            </div>
+                            <div class="single-utensil">
+                                <i class="fas fa-plug yellow-b"></i> <p>Electric Mixer</p> <input type="checkbox">
+                            </div>
+                        </div>
+                        <div class="flex left long  up">
+                            <i class="fas fa-plus yellow "></i> <p>Add Utensil</p>
+                        </div>
+                    </div>
+                </fieldset>
+            </div>
         </div>
     </main>
-
 </html>
