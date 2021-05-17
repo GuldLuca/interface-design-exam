@@ -9,7 +9,7 @@ body {
   width: 100%;
   display: flex;
   flex-direction: column;
-  // align-items: center;
+  align-items: center;
 }
 .read-more-btn {
   background-color: variables.$main;
@@ -418,13 +418,9 @@ body {
 }
 
 @media (min-width: variables.$tablet) {
-  // .home-page {
-  //   & > div {
-  //     padding: 0px 10%;
-  //   }
-  // }
   .home-page {
     box-sizing: border-box;
+    max-width: 900px;
     padding: 0px 10%;
     .header {
       .profile {
