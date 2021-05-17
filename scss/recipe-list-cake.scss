@@ -1,0 +1,270 @@
+@use 'variables';
+
+$image-height: 300px;
+$overlay-height: 50px;
+
+main {
+  max-width: 1280px;
+}
+
+.cont {
+  // Let's try to style content in each page we add it in seperately
+}
+article.single-recipe-template {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  grid-template-rows: $image-height auto auto;
+
+  align-items: center;
+  position: relative;
+  .image {
+    background-image: url(../img/section-2-background.png);
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+  }
+
+  .recipe-label {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    padding: 0.3rem 0.8rem;
+    border-radius: 10px;
+    color: variables.$basic-white;
+    background: variables.$main-red-30;
+  }
+
+  .title-review-container {
+    display: grid;
+    width: 100%;
+    grid-template-columns: 65% 35%;
+    grid-template-rows: $overlay-height;
+    justify-content: center;
+    align-items: center;
+
+    position: absolute;
+
+    top: calc(#{$image-height} - #{$overlay-height});
+    background: variables.$see-through-2;
+
+    .title-of-recipe {
+      background: variables.$basic-white;
+      height: 100%;
+      width: 100%;
+      border-radius: 0px 20px 0px 0px;
+      display: inline-flex;
+      align-items: center;
+      word-wrap: break-word;
+      overflow: hidden;
+      h3 {
+        padding-left: 10px;
+      }
+    }
+    .review-rating-recipe {
+      height: 100%;
+      width: 100%;
+
+      display: grid;
+      justify-content: center;
+      align-items: center;
+    }
+  }
+  .icon-button-container {
+    display: grid;
+    width: 100%;
+    margin-top: 10px;
+    grid-template-columns: 65% 35%;
+    grid-template-rows: $overlay-height;
+    align-items: center;
+    .icons {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      grid-template-rows: 1fr;
+      align-items: center;
+    }
+    a.button {
+      margin: 0;
+      padding: 0;
+      border-radius: 20px;
+      background: variables.$main;
+      color: variables.$basic-white;
+      border: none;
+      filter: drop-shadow(2px 0px 2px variables.$main-red-30);
+      height: fit-content;
+      padding: 0.5rem 1.25rem;
+      text-decoration: none;
+      text-align: center;
+    }
+  }
+  .image-link {
+    content: '';
+    width: 100%;
+    height: $image-height;
+    position: absolute;
+    left: 0;
+    top: 0;
+  }
+}
+
+.header{
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 10px;
+    .profile{
+        img{
+            border-radius: 20px;
+        }
+        padding-left: 20px;
+        padding-top: 20px;
+    }
+    .logo{
+        img{
+            width: 100px;
+            height: auto;
+        }
+        padding-top: 20px;
+    }
+
+    .search-and-menu{
+        padding-right: 20px;
+        padding-top: 25px;
+    }
+  
+}
+
+.footer{
+    border-top: 1px solid variables.$basic-light-grey;
+    width: 90%;
+    margin-left: 15px;
+    display: flex;
+    flex-direction: column;
+    a{
+        color: variables.$basic-dark-grey;
+        text-decoration: none;
+        font-size: 14px;
+        font-weight: 400;
+    }
+
+    .grid-1{
+        padding-top: 30px;
+        padding-bottom: 20px;
+        img{
+            padding-right: 20px;
+            width: 30px;
+            height: auto;
+        }
+    }
+
+    .grid-2{
+        .privacy{
+            padding-left: 30px;
+        }
+    }
+
+    .grid-3{
+        padding-top: 10px;
+        .contact{
+            padding-left: 70px;
+        }
+    }
+
+    .grid-4{
+        display: flex;
+        justify-content: center;
+        align-content: center;
+        padding-top: 30px;
+        padding-bottom: 30px;
+        img{
+            width: 16px;
+            height: 16px;
+            margin-top: auto;
+        }
+        p{
+            font-size: 14px;
+            font-weight: 300;
+            padding-left: 10px;
+            color: variables.$basic-dark-grey;
+        }
+    }
+
+}
+
+.category-banner{
+    background-color: variables.$main-red-10;
+
+    .back{
+      width: 17px;
+      height: auto;
+      padding-top: 15px;
+      padding-left: 15px;
+    }
+
+    .category{
+      padding-left: 125px;
+      img{
+        display: inline;
+        width: 67px;
+        height: 70px;
+
+      }
+
+      p{
+        display: inline;
+        color: variables.$basic-dark-red;
+        font-weight: 800;
+        font-size: 30px;
+        padding-left: 20px;
+      }
+    }
+
+    padding-bottom: 50px;
+}
+
+.category-description{
+  width: 90%;
+  padding-left: 20px;
+  p{
+    font-weight: 400;
+    font-size: 18px;
+  }
+}
+
+.results{
+
+  p{
+    font-weight: 800;
+    font-size: 25px;
+    display: inline;
+    color: variables.$basic-dark-red;
+  }
+
+  button{
+    display: inline;
+    background-color: variables.$accent-orange;
+    color: variables.$basic-white;
+    text-align: center;
+    border: none;
+    border-radius: 10px;
+    padding-left: 12px;
+    padding-right: 12px;
+    padding-top: 7px;
+    padding-bottom: 7px;
+    float: right;
+  }
+}
+
+.pages{
+  padding-top: 50px;
+  padding-bottom: 50px;
+  text-align: center;
+  p{
+    display: inline;
+    width: 5px;
+    margin-right: 10px;
+  }
+  .page-1{
+    border-bottom: 1px variables.$accent-orange solid;
+    color: variables.$accent-orange;
+  }
+}

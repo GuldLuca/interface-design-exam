@@ -17,10 +17,19 @@ section#search-results {
 }
 
 #page-search form {
+  position: relative;
   padding: 45px 17px 17px 17px;
   display: flex;
   align-items: center;
   border-bottom: 1px solid rgba(77, 11, 11, 0.25);
+}
+#page-search form a.amanda-page {
+  content: "";
+  width: 80%;
+  height: 100%;
+  top: 0;
+  right: 0;
+  position: absolute;
 }
 #page-search form #btn-arrow-back {
   width: 17px;
