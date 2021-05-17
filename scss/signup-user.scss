@@ -1,0 +1,103 @@
+@use "variables";
+
+main#signup-user {
+  min-height: 100vh;
+
+  #grid {
+    display: grid;
+    #first-section {
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+      .back {
+        padding: 20px;
+        margin: 0 10px 0 10px;
+        width: 20px;
+        height: auto;
+      }
+      #main-first-section {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        h2 {
+          text-align: center;
+          font-size: 40px;
+        }
+        form > * {
+          display: block;
+          box-sizing: border-box;
+        }
+        form {
+          input {
+            background: #ffffff;
+            box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.25);
+            border-radius: 10px;
+            border: none;
+            width: 320px;
+            height: 52px;
+            margin-top: 22px;
+            padding: 10px;
+            margin-left: auto;
+            margin-right: auto;
+            &::placeholder {
+              font-size: 16px;
+              color: variables.$basic-light-grey;
+            }
+          }
+          button {
+            background: variables.$main;
+            box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.25);
+            border-radius: 26px;
+            border: none;
+            margin-top: 50px;
+            width: 320px;
+            height: 52px;
+            color: variables.$basic-white;
+            font-size: 20px;
+            margin-left: auto;
+            margin-right: auto;
+          }
+        }
+        #social-media {
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          p {
+            text-align: center;
+            font-size: 15px;
+            margin-top: 30px;
+            color: variables.$basic-light-grey;
+          }
+
+          #images {
+            display: flex;
+            margin-left: auto;
+            margin-right: auto;
+          }
+        }
+
+        #registered {
+          font-size: 16px;
+          margin-top: 70px;
+          text-align: center;
+          #login {
+            color: variables.$main;
+          }
+        }
+      }
+    }
+  }
+
+  @media (min-width: variables.$laptop) {
+    #grid {
+      grid-template-columns: 1fr 1fr;
+      #second-section {
+        background-image: url(../img/admin-login.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+      }
+    }
+  }
+}

@@ -1,0 +1,94 @@
+@use "variables";
+
+.header {
+  .search-and-menu {
+    #back-to-website {
+      color: black;
+    }
+  }
+}
+main#cw-profile {
+  #first-section {
+    height: 100px;
+    padding: 0 35px 0 35px;
+    background-color: variables.$basic-brown-10;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    #sort {
+      display: flex;
+      align-items: center;
+      p {
+        font-size: 30px;
+        color: variables.$basic-dark-red;
+      }
+      img {
+        margin-top: auto;
+        margin-bottom: 10px;
+        margin-left: 5px;
+      }
+    }
+    #select {
+      p {
+        margin-left: 5px;
+      }
+    }
+    input {
+      width: 400px;
+      padding: 15px 28px 16px;
+      border-radius: 10px;
+      border: 1px solid variables.$basic-dark-red;
+      &::placeholder {
+        font-weight: 800;
+        font-size: 14px;
+        color: variables.$basic-light-grey;
+      }
+    }
+    #select {
+      display: flex;
+      font-size: 20px;
+      color: variables.$basic-dark-grey;
+    }
+    button {
+      background-color: variables.$main;
+      width: 150px;
+      height: 60px;
+      border-radius: 10px;
+      border: none;
+      color: variables.$basic-white;
+      font-size: 20px;
+    }
+  }
+  table {
+    width: 100%;
+    padding: 0 35px 0 35px;
+    td {
+      text-align: center;
+    }
+    td.name {
+      text-align: left;
+    }
+    td.status {
+      color: variables.$alert-yellow;
+    }
+    span.article-label {
+      background-color: variables.$accent-green-10;
+      border-radius: 25px;
+      padding: 10px 15px 10px 15px;
+    }
+    span.recipe-label {
+      background-color: variables.$main-red-30;
+      border-radius: 25px;
+      padding: 10px 15px 10px 15px;
+    }
+    th {
+      font-size: 20px;
+    }
+    td,
+    th {
+      border: 2px solid #949494;
+      padding: 20px;
+    }
+    border-collapse: collapse;
+  }
+}
