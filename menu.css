@@ -4,7 +4,7 @@
   font-family: sofia-pro, sans-serif;
 }
 
-.frontpage .read-more-btn {
+.read-more-btn {
   background-color: #ee2222;
   color: #ffffff;
   border-radius: 20px;
@@ -15,63 +15,66 @@
   border: none;
   font-size: 12px;
 }
-.frontpage figma .header {
+
+.header {
   display: flex;
   justify-content: space-between;
   padding-bottom: 10px;
 }
-.frontpage figma .header .profile {
+.header .profile {
   padding-left: 20px;
   padding-top: 20px;
 }
-.frontpage figma .header .profile img {
+.header .profile img {
   border-radius: 20px;
 }
-.frontpage figma .header .logo {
+.header .logo {
   padding-top: 20px;
 }
-.frontpage figma .header .logo img {
-  width: 100px;
+.header .logo img {
+  max-width: 100px;
   height: auto;
 }
-.frontpage figma .header .search-and-menu {
+.header .search-and-menu {
   padding-right: 20px;
   padding-top: 25px;
 }
-.frontpage figma .header .search-and-menu .search {
+.header .search-and-menu .search {
   padding-right: 30px;
 }
-.frontpage .section-1-menu-expanded {
+
+.section-1-menu-expanded {
   width: 100%;
   box-shadow: 0px 4px 15px -5px rgba(0, 0, 0, 0.25);
   border-top: 1px solid rgba(77, 11, 11, 0.1);
 }
-.frontpage .section-1-menu-expanded ul {
+.section-1-menu-expanded ul {
   text-align: center;
   padding: 0;
 }
-.frontpage .section-1-menu-expanded ul li {
+.section-1-menu-expanded ul li {
   list-style-type: none;
   padding-top: 30px;
 }
-.frontpage .section-1-menu-expanded ul li a {
+.section-1-menu-expanded ul li a {
   text-decoration: none;
   color: #4d4d4d;
   font-weight: 400;
   font-size: 20px;
 }
-.frontpage .section-1-menu-expanded ul li .home {
+.section-1-menu-expanded ul li .home {
   color: #4d0b0b;
   font-weight: 800;
   font-size: 20px;
 }
-.frontpage .section-1-menu-expanded ul .about {
+.section-1-menu-expanded ul .about {
   padding-bottom: 40px;
 }
-.frontpage .section-2 {
+
+.section-2 {
   padding-bottom: 50px;
 }
-.frontpage .section-2 h1 {
+.section-2 h1 {
   color: #4d0b0b;
   padding-top: 30px;
   padding-left: 18px;
@@ -79,11 +82,11 @@
   font-size: 25px;
   font-weight: 800;
 }
-.frontpage .section-2 .flex-container {
+.section-2 .flex-container {
   display: flex;
   justify-content: center;
 }
-.frontpage .section-2 .flex-container .background {
+.section-2 .flex-container .background {
   background-image: url("img/section-2-background.png");
   background-size: 100% auto;
   background-repeat: no-repeat;
@@ -91,7 +94,7 @@
   height: auto;
   padding-top: 5px;
 }
-.frontpage .section-2 .flex-container .background .recipe-label {
+.section-2 .flex-container .background .recipe-label {
   background-color: rgba(238, 34, 34, 0.3);
   color: #ffffff;
   margin-left: 10px;
@@ -106,26 +109,26 @@
   font-size: 12px;
   font-weight: 400;
 }
-.frontpage .section-2 .flex-container .background .grid-view {
+.section-2 .flex-container .background .grid-view {
   display: grid;
   grid-template-columns: 4fr 2fr;
 }
-.frontpage .section-2 .flex-container .background .recipe-white-box {
+.section-2 .flex-container .background .recipe-white-box {
   background-color: #ffffff;
   margin-top: 200px;
   border-radius: 0px 20px 0px 0px;
 }
-.frontpage .section-2 .flex-container .background .recipe-white-box .recipe-title {
+.section-2 .flex-container .background .recipe-white-box .recipe-title {
   padding-top: 10px;
   font-weight: 800;
   font-size: 18px;
 }
-.frontpage .section-2 .flex-container .background .recipe-white-box .recipe-diet {
+.section-2 .flex-container .background .recipe-white-box .recipe-diet {
   color: #949494;
   font-size: 10px;
   font-weight: 400;
 }
-.frontpage .section-2 .flex-container .background .ratings {
+.section-2 .flex-container .background .ratings {
   margin-top: 200px;
   background-color: rgba(255, 255, 255, 0.5);
   padding-left: 10px;
@@ -136,7 +139,7 @@
   font-weight: 400;
   font-size: 13px;
 }
-.frontpage .section-2 .last-section-recipe {
+.section-2 .last-section-recipe {
   background-color: #ffffff;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 2fr;
@@ -144,14 +147,15 @@
   margin-left: 19px;
   padding-top: 5px;
 }
-.frontpage .section-2 .last-section-recipe img {
+.section-2 .last-section-recipe img {
   width: 45px;
   height: auto;
 }
-.frontpage .section-2 .last-section-recipe button {
+.section-2 .last-section-recipe button {
   box-shadow: rgba(0, 0, 0, 0.25) 0px 4px 4px 0px;
 }
-.frontpage .section-3 .background {
+
+.section-3 .background {
   background-image: url("img/section-2-background.png");
   background-size: 100% auto;
   background-repeat: no-repeat;
@@ -161,7 +165,7 @@
   padding-top: 5px;
   border-radius: 12px;
 }
-.frontpage .section-3 .background .article-label {
+.section-3 .background .article-label {
   background-color: rgba(31, 229, 183, 0.3);
   color: #ffffff;
   margin-left: 10px;
@@ -176,10 +180,10 @@
   font-size: 12px;
   font-weight: 400;
 }
-.frontpage .section-3 .background .article-title {
+.section-3 .background .article-title {
   background-color: rgba(255, 255, 255, 0.7);
 }
-.frontpage .section-3 .background .article-title .title {
+.section-3 .background .article-title .title {
   width: 80%;
   padding-left: 20px;
   padding-top: 10px;
@@ -188,15 +192,15 @@
   font-size: 18px;
   margin-top: 185px;
 }
-.frontpage .section-3 .background .article-title img {
+.section-3 .background .article-title img {
   display: inline;
   padding-left: 20px;
 }
-.frontpage .section-3 .background .article-title .minutes {
+.section-3 .background .article-title .minutes {
   display: inline;
   font-size: 9px;
 }
-.frontpage .section-3 .background .manchet {
+.section-3 .background .manchet {
   font-size: 14px;
   font-weight: 400;
   color: #4d4d4d;
@@ -204,11 +208,12 @@
   width: 90%;
   padding-bottom: 25px;
 }
-.frontpage .section-4 {
+
+.section-4 {
   width: 100%;
   padding-top: 50px;
 }
-.frontpage .section-4 .background {
+.section-4 .background {
   background-image: url("img/section-4-background.png");
   background-size: 100% auto;
   background-repeat: no-repeat;
@@ -216,14 +221,14 @@
   display: flex;
   flex-direction: column;
 }
-.frontpage .section-4 .background h1 {
+.section-4 .background h1 {
   font-size: 25px;
   font-weight: 800;
   color: #4d0b0b;
   padding-top: 25px;
   padding-left: 15px;
 }
-.frontpage .section-4 .background .apricots {
+.section-4 .background .apricots {
   border-radius: 15px;
   background-color: rgba(77, 11, 11, 0.1);
   padding-top: 5px;
@@ -236,17 +241,17 @@
   display: inline-flex;
   align-content: center;
 }
-.frontpage .section-4 .background .apricots img {
+.section-4 .background .apricots img {
   display: inline;
 }
-.frontpage .section-4 .background .apricots p {
+.section-4 .background .apricots p {
   display: inline;
   font-size: 14px;
   font-weight: 400;
   padding-left: 10px;
   color: #4d0b0b;
 }
-.frontpage .section-4 .background a {
+.section-4 .background a {
   color: #4d0b0b;
   font-size: 14px;
   font-weight: 800;
@@ -254,86 +259,89 @@
   margin-top: auto;
   padding-bottom: 20px;
 }
-.frontpage .section-5 {
+
+.section-5 {
   margin-top: 45px;
   padding-bottom: 20px;
 }
-.frontpage .section-5 h1 {
+.section-5 h1 {
   font-size: 25px;
   font-weight: 800;
   color: #4d0b0b;
   padding-left: 20px;
   padding-bottom: 40px;
 }
-.frontpage .section-5 .images {
+.section-5 .images {
   display: flex;
   justify-content: space-around;
   flex-flow: row wrap;
 }
-.frontpage .section-5 .images p {
+.section-5 .images p {
   font-weight: 800;
   font-size: 16px;
   padding-left: 25px;
 }
-.frontpage .section-5 .images img {
+.section-5 .images img {
   border-radius: 65px;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
-.frontpage .section-5 .images .img-1 {
+.section-5 .images .img-1 {
   padding-left: 20px;
   padding-top: 20px;
 }
-.frontpage .section-5 .images .img-2 {
+.section-5 .images .img-2 {
   margin-top: auto;
   padding-top: 150px;
 }
-.frontpage .section-5 .images .img-3 {
+.section-5 .images .img-3 {
   padding-right: 20px;
 }
-.frontpage .footer {
+
+.footer {
   border-top: 1px solid #949494;
   width: 90%;
   margin-left: 15px;
   display: flex;
   flex-direction: column;
+  margin-top: 20px;
 }
-.frontpage .footer a {
+.footer a {
   color: #4d4d4d;
   text-decoration: none;
   font-size: 14px;
   font-weight: 400;
 }
-.frontpage .footer .grid-1 {
+.footer .grid-1 {
   padding-top: 30px;
   padding-bottom: 20px;
 }
-.frontpage .footer .grid-1 img {
+.footer .grid-1 img {
   padding-right: 20px;
   width: 30px;
   height: auto;
 }
-.frontpage .footer .grid-2 .privacy {
+.footer .grid-2 .privacy {
   padding-left: 30px;
 }
-.frontpage .footer .grid-3 {
+.footer .grid-3 {
   padding-top: 10px;
 }
-.frontpage .footer .grid-3 .contact {
+.footer .grid-3 .contact {
   padding-left: 70px;
 }
-.frontpage .footer .grid-4 {
+.footer .grid-4 {
   display: flex;
   justify-content: center;
   align-content: center;
   padding-top: 30px;
   padding-bottom: 30px;
 }
-.frontpage .footer .grid-4 img {
+.footer .grid-4 img {
   width: 16px;
   height: 16px;
   margin-top: auto;
 }
-.frontpage .footer .grid-4 p {
+.footer .grid-4 p {
   font-size: 14px;
   font-weight: 300;
   padding-left: 10px;

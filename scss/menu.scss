@@ -6,8 +6,6 @@
     
 }
 
-.frontpage{
-
     .read-more-btn{
         background-color: variables.$main;
         color: variables.$basic-white;
@@ -18,7 +16,7 @@
         padding-bottom:8px;
         border: none;
         font-size: 12px;
-    }figma
+    }
 
     .header{
         display: flex;
@@ -33,7 +31,7 @@
         }
         .logo{
             img{
-                width: 100px;
+                max-width: 100px;
                 height: auto;
             }
             padding-top: 20px;
@@ -339,6 +337,7 @@
         margin-left: 15px;
         display: flex;
         flex-direction: column;
+        margin-top: 20px;
         a{
             color: variables.$basic-dark-grey;
             text-decoration: none;
@@ -389,7 +388,7 @@
         }
 
     }
-}
+
 
 @media(min-width: variables.$tablet){
     .frontpage{
