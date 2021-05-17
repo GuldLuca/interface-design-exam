@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../cw-profile.css" />
+    <link rel="stylesheet" href="../general.css" />
+    <link rel="stylesheet" href="../frontpage.css" />
+
+    <title>Content Writer Profile</title>
+  </head>
+  <body>
+    <div class="header">
+      <a class="profile" href="/"
+        ><img src="../img/cw-profile-image.png" alt="profile-image"
+      /></a>
+      <a class="logo" href="index.html"
+        ><img src="../img/logo.png" alt="logo"
+      /></a>
+      <div class="search-and-menu">
+        <a href="/" id="back-to-website">Back to the website</a>
+      </div>
+    </div>
+    <main id="cw-profile">
+      <div id="first-section">
+        <div id="sort">
+          <a
+            href="cw-profile-articles.html"
+            id="not-active"
+            class="articles-link"
+            >Articles</a
+          >
+          <a href="/" id="active" class="recipes-link">Recipes</a>
+        </div>
+        <input type="search" placeholder="Search for something..." />
+
+        <div id="select">
+          <img src="../img/select-icon.svg" alt="select icon" />
+          <p>Select</p>
+        </div>
+        <button>New Recipe</button>
+      </div>
+      <table>
+        <tr>
+          <th>Name</th>
+          <th>Status</th>
+          <th>Tag</th>
+          <th>Published</th>
+        </tr>
+        <tr>
+          <td class="name">Cherry cheesecake</td>
+          <td class="status">Published</td>
+          <td><span class="recipe-label">Recipe</span></td>
+          <td>May 10, 2021 12:00</td>
+        </tr>
+        <tr>
+          <td class="name">Lime cheesecake</td>
+          <td class="status">Published</td>
+          <td><span class="recipe-label">Recipe</span></td>
+          <td>May 10, 2021 12:00</td>
+        </tr>
+      </table>
+    </main>
+  </body>
+</html>

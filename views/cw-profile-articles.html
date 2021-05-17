@@ -21,8 +21,10 @@
     <main id="cw-profile">
       <div id="first-section">
         <div id="sort">
-          <p>Articles</p>
-          <img src="../img/down-arrow.svg" alt="down arrow icon" />
+          <a href="/" id="active" class="articles-link">Articles</a>
+          <a href="cw-profile-recipes.html" id="not-active" class="recipes-link"
+            >Recipes</a
+          >
         </div>
         <input type="search" placeholder="Search for something..." />
 
@@ -30,7 +32,7 @@
           <img src="../img/select-icon.svg" alt="select icon" />
           <p>Select</p>
         </div>
-        <button>New</button>
+        <button>New Article</button>
       </div>
       <table>
         <tr>
@@ -46,10 +48,12 @@
           <td>May 3, 2021 08:00</td>
         </tr>
         <tr>
-          <td class="name">Cherry cheesecake</td>
+          <td class="name">
+            Name of an article longer lorem ipsum article bla bla
+          </td>
           <td class="status">Published</td>
-          <td><span class="recipe-label">Recipe</span></td>
-          <td>May 10, 2021 12:00</td>
+          <td><span class="article-label">Article</span></td>
+          <td>May 3, 2021 08:00</td>
         </tr>
       </table>
     </main>

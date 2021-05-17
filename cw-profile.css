@@ -15,9 +15,20 @@ main#cw-profile #first-section #sort {
   display: flex;
   align-items: center;
 }
-main#cw-profile #first-section #sort p {
+main#cw-profile #first-section #sort a {
   font-size: 30px;
   color: #4d0b0b;
+  text-decoration: none;
+}
+main#cw-profile #first-section #sort #active {
+  text-decoration: underline;
+}
+main#cw-profile #first-section #sort #not-active {
+  color: #949494;
+  font-size: 25px;
+}
+main#cw-profile #first-section #sort .recipes-link {
+  margin-left: 30px;
 }
 main#cw-profile #first-section #sort img {
   margin-top: auto;
@@ -57,8 +68,12 @@ main#cw-profile table {
   padding: 0 35px 0 35px;
   border-collapse: collapse;
 }
+main#cw-profile table table {
+  table-layout: fixed;
+}
 main#cw-profile table td {
   text-align: center;
+  width: 33%;
 }
 main#cw-profile table td.name {
   text-align: left;

@@ -18,10 +18,22 @@ main#cw-profile {
     #sort {
       display: flex;
       align-items: center;
-      p {
+      a {
         font-size: 30px;
         color: variables.$basic-dark-red;
+        text-decoration: none;
       }
+      #active {
+        text-decoration: underline;
+      }
+      #not-active {
+        color: variables.$basic-light-grey;
+        font-size: 25px;
+      }
+      .recipes-link {
+        margin-left: 30px;
+      }
+
       img {
         margin-top: auto;
         margin-bottom: 10px;
@@ -62,8 +74,12 @@ main#cw-profile {
   table {
     width: 100%;
     padding: 0 35px 0 35px;
+    table {
+      table-layout: fixed;
+    }
     td {
       text-align: center;
+      width: 33%;
     }
     td.name {
       text-align: left;
@@ -81,6 +97,7 @@ main#cw-profile {
       border-radius: 25px;
       padding: 10px 15px 10px 15px;
     }
+
     th {
       font-size: 20px;
     }
