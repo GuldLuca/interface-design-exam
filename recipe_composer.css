@@ -264,6 +264,30 @@ main#recipe_composer .composer-container textarea.big {
   min-height: 150px;
   resize: none;
 }
+main#recipe_composer .toggler {
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-template-rows: 1fr;
+  width: 160px;
+  height: 30px;
+  background: #ffffff;
+  align-items: center;
+  border-radius: 20px;
+  margin-bottom: 20px;
+  border: 1px solid rgba(0, 0, 0, 0.158);
+  color: #4d0b0b75;
+  font-size: 10px;
+}
+main#recipe_composer .toggler span.metric {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 80px;
+  height: 100%;
+  background: #4d0b0b75;
+  color: #ffffff;
+  border-radius: 20px;
+}
 main#recipe_composer .mt-20 {
   margin-top: 20px;
 }
