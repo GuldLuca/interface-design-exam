@@ -58,10 +58,19 @@ button {
     width: 50px;
   }
   h2 {
+    text-align: center;
     font-weight: normal;
     font-size: 16px;
     line-height: 25px;
     color: #4d0b0b;
+  }
+}
+#cookbook-results {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  article {
+    margin: 20px 8px;
   }
 }
 

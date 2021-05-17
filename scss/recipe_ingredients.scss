@@ -180,12 +180,7 @@ section.single-recipe {
   svg {
     margin-right: 10px;
   }
-  h3,
-  h3,
-  h4,
-  h5,
-  p {
-  }
+
   .middle-container {
     margin: 0 14px;
     .about-container {
@@ -331,8 +326,6 @@ section.single-recipe {
               background: $basic-brown-30;
               color: $basic-white;
             }
-            &:last-child {
-            }
           }
         }
       }
@@ -421,8 +414,6 @@ section.single-recipe {
           margin-right: 1rem;
           height: 100%;
         }
-      }
-      .icon {
       }
     }
     .single-review {

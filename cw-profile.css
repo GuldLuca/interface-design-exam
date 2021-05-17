@@ -1,0 +1,88 @@
+@import url(https://use.typekit.net/rll2ezx.css);
+.header .search-and-menu #back-to-website {
+  color: black;
+}
+
+main#cw-profile #first-section {
+  height: 100px;
+  padding: 0 35px 0 35px;
+  background-color: rgba(77, 11, 11, 0.1);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+main#cw-profile #first-section #sort {
+  display: flex;
+  align-items: center;
+}
+main#cw-profile #first-section #sort p {
+  font-size: 30px;
+  color: #4d0b0b;
+}
+main#cw-profile #first-section #sort img {
+  margin-top: auto;
+  margin-bottom: 10px;
+  margin-left: 5px;
+}
+main#cw-profile #first-section #select p {
+  margin-left: 5px;
+}
+main#cw-profile #first-section input {
+  width: 400px;
+  padding: 15px 28px 16px;
+  border-radius: 10px;
+  border: 1px solid #4d0b0b;
+}
+main#cw-profile #first-section input::placeholder {
+  font-weight: 800;
+  font-size: 14px;
+  color: #949494;
+}
+main#cw-profile #first-section #select {
+  display: flex;
+  font-size: 20px;
+  color: #4d4d4d;
+}
+main#cw-profile #first-section button {
+  background-color: #ee2222;
+  width: 150px;
+  height: 60px;
+  border-radius: 10px;
+  border: none;
+  color: #ffffff;
+  font-size: 20px;
+}
+main#cw-profile table {
+  width: 100%;
+  padding: 0 35px 0 35px;
+  border-collapse: collapse;
+}
+main#cw-profile table td {
+  text-align: center;
+}
+main#cw-profile table td.name {
+  text-align: left;
+}
+main#cw-profile table td.status {
+  color: #ffba08;
+}
+main#cw-profile table span.article-label {
+  background-color: rgba(31, 229, 183, 0.3);
+  border-radius: 25px;
+  padding: 10px 15px 10px 15px;
+}
+main#cw-profile table span.recipe-label {
+  background-color: rgba(238, 34, 34, 0.3);
+  border-radius: 25px;
+  padding: 10px 15px 10px 15px;
+}
+main#cw-profile table th {
+  font-size: 20px;
+}
+main#cw-profile table td,
+main#cw-profile table th {
+  border: 2px solid #949494;
+  padding: 20px;
+}
+
+/*# sourceMappingURL=cw-profile.css.map */
