@@ -75,7 +75,7 @@ section#search-results {
 }
 
 #search-results {
-  min-height: 40vh;
+  min-height: 60vh;
 }
 #search-results a {
   text-decoration: none;

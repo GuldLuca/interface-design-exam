@@ -30,6 +30,7 @@ body {
   justify-content: space-between;
   padding-bottom: 10px;
   width: 100%;
+  border-bottom: 1px solid rgba(77, 11, 11, 0.1);
 }
 .header .profile {
   padding-left: 20px;
@@ -319,6 +320,8 @@ body {
   padding: 30px 16px 0px 16px;
   display: flex;
   flex-direction: column;
+  justify-content: center;
+  align-items: center;
   margin-top: 100px;
 }
 .footer a {
@@ -336,7 +339,8 @@ body {
 }
 .footer .grid-1 img {
   margin: 0;
-  width: 30px;
+  width: 35px;
+  height: 35px;
   height: auto;
 }
 .footer .grid-1 img:nth-child(1) {
@@ -361,7 +365,7 @@ body {
 .footer .grid-4 img {
   width: 16px;
   height: 16px;
-  margin-top: auto;
+  margin-top: 4px;
 }
 .footer .grid-4 p {
   font-size: 14px;
