@@ -7,10 +7,24 @@
     <title>Document</title>
     <link rel="stylesheet" href="../recipe_single_template.css" />
   </head>
+  <style>
+    .container {
+      max-width: 900px;
+      margin: 0 auto;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      grid-template-rows: auto;
+      grid-gap: 20px;
+    }
+    /*     @media screen and ((tablet width)) {
+      .container {
+        grid-template-columns: repeat(3, minmax(250px, 1fr));
+      }
+    } */
+  </style>
   <body>
     <main>
-      <div class="cont">
-
+      <div class="container">
         <article class="single-recipe-template">
           <div class="image"></div>
           <a href="#" class="image-link"></a>
@@ -73,7 +87,6 @@
             <a href="#" class="button">Read more</a>
           </div>
         </article>
-        
       </div>
     </main>
   </body>
