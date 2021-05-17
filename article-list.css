@@ -1,19 +1,125 @@
 @import url(https://use.typekit.net/rll2ezx.css);
-.section-1 {
-  background-image: url("img/pexels-tran-564883 1.png");
+* {
+  margin: 0;
 }
 
-.section-articles .background {
+.section-1 {
+  width: 100%;
+}
+.section-1 .image {
+  background-image: url("img/pexels-tran-564883 1.png");
+  background-position: center;
+  background-size: cover;
+  width: 100%;
+  height: 255px;
+}
+.section-1 .title-container {
+  display: grid;
+  width: 100%;
+  grid-template-columns: 65% 35%;
+  grid-template-rows: 50px;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: calc(300px - 50px);
+  background: rgba(255, 255, 255, 0.7);
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+.section-1 .title-container .title-of-article {
+  height: 100%;
+  width: 100%;
+  display: inline-flex;
+  align-items: center;
+  overflow: hidden;
+}
+.section-1 .title-container .title-of-article h3 {
+  padding-left: 10px;
+}
+.section-1 .title-container .read-more {
+  display: grid;
+  justify-content: center;
+  align-items: center;
+}
+.section-1 .title-container .read-more button {
+  background-color: #ee2222;
+  color: #ffffff;
+  border-radius: 20px;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  border: none;
+  font-size: 12px;
+}
+.section-1 .title-container .read-more button a {
+  text-decoration: none;
+  color: #ffffff;
+}
+
+.latest {
+  padding-bottom: 20px;
+  padding-top: 50px;
+}
+.latest h1 {
+  font-weight: 800;
+  font-size: 25px;
+  color: #4d0b0b;
+  display: inline;
+  margin-left: 10px;
+}
+.latest button {
+  margin-right: 10px;
+  display: inline;
+  background-color: #ed7321;
+  color: #ffffff;
+  text-align: center;
+  border: none;
+  border-radius: 10px;
+  padding-left: 12px;
+  padding-right: 12px;
+  padding-top: 7px;
+  padding-bottom: 7px;
+  float: right;
+}
+.latest button a {
+  text-decoration: none;
+  color: #ffffff;
+}
+
+.read-more-btn {
+  background-color: #ee2222;
+  color: #ffffff;
+  border-radius: 20px;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  border: none;
+  font-size: 12px;
+}
+.read-more-btn a {
+  text-decoration: none;
+  color: #ffffff;
+}
+
+.section-articles {
+  padding-top: 20px;
+}
+.section-articles .article {
+  padding-bottom: 30px;
+}
+.section-articles .article .background {
   background-image: url("img/section-2-background.png");
   background-size: 100% auto;
   background-repeat: no-repeat;
-  width: 90%;
-  margin-left: 19px;
+  max-width: 350px;
+  margin-left: 15px;
   height: auto;
   padding-top: 5px;
   border-radius: 12px;
 }
-.section-articles .background .article-label {
+.section-articles .article .background .article-label {
   background-color: rgba(31, 229, 183, 0.3);
   color: #ffffff;
   margin-left: 10px;
@@ -28,10 +134,10 @@
   font-size: 12px;
   font-weight: 400;
 }
-.section-articles .background .article-title {
+.section-articles .article .background .article-title {
   background-color: rgba(255, 255, 255, 0.7);
 }
-.section-articles .background .article-title .title {
+.section-articles .article .background .article-title .title {
   width: 80%;
   padding-left: 20px;
   padding-top: 10px;
@@ -40,25 +146,56 @@
   font-size: 18px;
   margin-top: 185px;
 }
-.section-articles .background .article-title img {
+.section-articles .article .background .article-title img {
   display: inline;
   padding-left: 20px;
 }
-.section-articles .background .article-title .minutes {
+.section-articles .article .background .article-title .minutes {
   display: inline;
   font-size: 9px;
 }
-.section-articles .background .manchet {
+.section-articles .article .background .manchet {
   font-size: 14px;
   font-weight: 400;
   color: #4d4d4d;
   padding-top: 20px;
-  width: 90%;
+  width: 100%;
   padding-bottom: 25px;
 }
-.section-articles .background button a {
+.section-articles .article .background button a {
   text-decoration: none;
   color: #ffffff;
+}
+
+.pages {
+  padding-top: 50px;
+  text-align: center;
+}
+.pages p {
+  display: inline;
+  width: 5px;
+  margin-right: 10px;
+}
+.pages .page-1 {
+  border-bottom: 1px #ed7321 solid;
+  color: #ed7321;
+}
+
+@media (min-width: 700px) {
+  .section-articles {
+    display: flex;
+    flex-direction: row;
+  }
+  .section-articles .article {
+    display: inline;
+  }
+  .section-articles .article .background {
+    margin-left: 30px;
+    flex: 50%;
+  }
+  .section-articles .article .background .article-title {
+    margin-top: 50px;
+  }
 }
 
 /*# sourceMappingURL=article-list.css.map */

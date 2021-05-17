@@ -1,74 +1,223 @@
 @use 'variables';
 
-.section-1{
-    background-image: url("img/pexels-tran-564883\ 1.png");
+$image-height: 300px;
+$overlay-height: 50px;
+
+*{
+    margin: 0;
 }
 
-.section-articles{
+.section-1{
+    width: 100%;
+    .image{
+        background-image: url("img/pexels-tran-564883\ 1.png");
+        background-position: center;
+        background-size: cover;
+        width: 100%;
+        height: 255px;
+    }
 
-    .background{
-        background-image: url("img/section-2-background.png");
-        background-size: 100% auto;
-        background-repeat: no-repeat;
-        width: 90%;
-        margin-left: 19px;
-        height: auto;
-        padding-top: 5px;
-        border-radius: 12px;
+    .title-container {
+        display: grid;
+        width: 100%;
+        grid-template-columns: 65% 35%;
+        grid-template-rows: $overlay-height;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        top: calc(#{$image-height} - #{$overlay-height});
+        background: variables.$see-through-2;
+        padding-top: 15px;
+        padding-bottom: 15px;
 
-        .article-label{
-            background-color: variables.$accent-green-10;
+        .title-of-article {
+          height: 100%;
+          width: 100%;
+          display: inline-flex;
+          align-items: center;
+          overflow: hidden;
+
+          h3 {
+            padding-left: 10px;
+
+          }
+        }
+
+        .read-more{      
+            display: grid;
+            justify-content: center;
+            align-items: center;
+
+            button{
+                background-color: variables.$main;
+                color: variables.$basic-white;
+                border-radius: 20px;
+                padding-left: 20px;
+                padding-right: 20px;
+                padding-top: 8px;
+                padding-bottom: 8px;
+                border: none;
+                font-size: 12px;
+              
+                a {
+                  text-decoration: none;
+                  color: variables.$basic-white;
+                }
+            }
+          }
+    }
+}
+
+.latest{
+    padding-bottom: 20px;
+    padding-top: 50px;
+    h1{
+        font-weight: 800;
+        font-size: 25px;
+        color: variables.$basic-dark-red;
+        display: inline;
+        margin-left: 10px;
+    }
+        button{
+            margin-right: 10px;
+            display: inline;
+            background-color: variables.$accent-orange;
             color: variables.$basic-white;
-            margin-left: 10px;
-            margin-top: 5px;
+            text-align: center;
+            border: none;
+            border-radius: 10px;
             padding-left: 12px;
             padding-right: 12px;
-            padding-top: 8px;
-            padding-bottom: 8px;
-            width: 10%;
-            text-align: center;
-            border-radius: 25px;
-            font-size: 12px;
-            font-weight: 400;
-        }
+            padding-top: 7px;
+            padding-bottom: 7px;
+            float: right;
 
-        .article-title{
-            background-color: variables.$see-through-2;
-            .title{
-                width: 80%;
-                padding-left: 20px;
-                padding-top: 10px;
-                color: variables.$basic-dark-red;
-                font-weight: 800;
-                font-size: 18px;
-                margin-top: 185px;
-            }
-            img{
-                display: inline;
-                padding-left: 20px;
-            }
-
-            .minutes{
-                display: inline;
-                font-size: 9px;
-            }
-
-        }
-
-        .manchet{
-            font-size: 14px;
-            font-weight: 400;
-            color: variables.$basic-dark-grey;
-            padding-top: 20px;
-            width: 90%;
-            padding-bottom: 25px;
-        }
-
-        button{
             a{
                 text-decoration: none;
                 color: variables.$basic-white;
             }
-        }
-    }
+          }
 }
+
+
+.read-more-btn {
+    background-color: variables.$main;
+    color: variables.$basic-white;
+    border-radius: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    border: none;
+    font-size: 12px;
+  
+    a {
+      text-decoration: none;
+      color: variables.$basic-white;
+    }
+  }
+
+.section-articles{
+    padding-top: 20px;
+    .article{
+    .background {
+      background-image: url('img/section-2-background.png');
+      background-size: 100% auto;
+      background-repeat: no-repeat;
+      max-width: 350px;
+      margin-left: 15px;
+      height: auto;
+      padding-top: 5px;
+      border-radius: 12px;
+  
+      .article-label {
+        background-color: variables.$accent-green-10;
+        color: variables.$basic-white;
+        margin-left: 10px;
+        margin-top: 5px;
+        padding-left: 12px;
+        padding-right: 12px;
+        padding-top: 8px;
+        padding-bottom: 8px;
+        width: 10%;
+        text-align: center;
+        border-radius: 25px;
+        font-size: 12px;
+        font-weight: 400;
+      }
+  
+      .article-title {
+        background-color: variables.$see-through-2;
+        .title {
+          width: 80%;
+          padding-left: 20px;
+          padding-top: 10px;
+          color: variables.$basic-dark-red;
+          font-weight: 800;
+          font-size: 18px;
+          margin-top: 185px;
+        }
+        img {
+          display: inline;
+          padding-left: 20px;
+        }
+  
+        .minutes {
+          display: inline;
+          font-size: 9px;
+        }
+      }
+  
+      .manchet {
+        font-size: 14px;
+        font-weight: 400;
+        color: variables.$basic-dark-grey;
+        padding-top: 20px;
+        width: 100%;
+        padding-bottom: 25px;
+      }
+  
+      button {
+        a {
+          text-decoration: none;
+          color: variables.$basic-white;
+        }
+      }
+    }
+    padding-bottom: 30px;
+  }
+}
+
+.pages{
+    padding-top: 50px;
+    text-align: center;
+    p{
+      display: inline;
+      width: 5px;
+      margin-right: 10px;
+    }
+    .page-1{
+      border-bottom: 1px variables.$accent-orange solid;
+      color: variables.$accent-orange;
+    }
+  }
+
+  @media (min-width: variables.$tablet) {
+
+    .section-articles{
+        display: flex;
+        flex-direction: row;
+
+        .article{
+            display: inline;
+            .background{
+                margin-left: 30px;
+                flex: 50%;
+                .article-title{
+                    margin-top: 50px;
+                }
+            }
+        }
+      
+    }
+  }

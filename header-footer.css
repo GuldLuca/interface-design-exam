@@ -1,0 +1,93 @@
+@import url(https://use.typekit.net/rll2ezx.css);
+.header {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 10px;
+  width: 100%;
+  border-bottom: 1px solid rgba(77, 11, 11, 0.1);
+}
+.header .profile {
+  padding-left: 20px;
+  padding-top: 20px;
+}
+.header .profile img {
+  border-radius: 20px;
+  width: 40px;
+  height: 40px;
+}
+.header .logo {
+  padding-top: 20px;
+}
+.header .logo img {
+  width: 100px;
+  height: auto;
+}
+.header .menu {
+  margin-left: 20px;
+}
+.header .search-and-menu {
+  padding-right: 20px;
+  padding-top: 25px;
+}
+
+.footer {
+  width: 100%;
+  border-top: 1px solid #949494;
+  padding: 30px 16px 0px 16px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 100px;
+}
+.footer a {
+  color: #4d4d4d;
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 400;
+}
+.footer a:hover {
+  text-decoration: underline;
+}
+.footer .grid-1 {
+  padding-top: 30px;
+  padding-bottom: 20px;
+}
+.footer .grid-1 img {
+  margin: 0;
+  width: 35px;
+  height: 35px;
+  height: auto;
+}
+.footer .grid-1 img:nth-child(1) {
+  margin-right: 24px;
+}
+.footer .grid-2 .privacy {
+  padding-left: 30px;
+}
+.footer .grid-3 {
+  padding-top: 10px;
+}
+.footer .grid-3 .contact {
+  padding-left: 70px;
+}
+.footer .grid-4 {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+.footer .grid-4 img {
+  width: 16px;
+  height: 16px;
+  margin-top: 4px;
+}
+.footer .grid-4 p {
+  font-size: 14px;
+  font-weight: 300;
+  padding-left: 10px;
+  color: #4d4d4d;
+}
+
+/*# sourceMappingURL=header-footer.css.map */
