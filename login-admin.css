@@ -1,0 +1,58 @@
+@import url(https://use.typekit.net/rll2ezx.css);
+main#login-admin #grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  min-height: 100vh;
+}
+main#login-admin #grid #first-section {
+  align-self: center;
+  justify-self: center;
+}
+main#login-admin #grid #first-section form > * {
+  display: block;
+  box-sizing: border-box;
+}
+main#login-admin #grid #first-section h2 {
+  color: #4d0b0b;
+  font-size: 52px;
+  margin-bottom: 40px;
+}
+main#login-admin #grid #first-section form input {
+  background: #ffffff;
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.25);
+  border-radius: 10px;
+  border: none;
+  width: 320px;
+  height: 52px;
+  margin-top: 22px;
+  padding: 10px;
+}
+main#login-admin #grid #first-section form input::placeholder {
+  font-size: 16px;
+  color: #949494;
+}
+main#login-admin #grid #first-section form a {
+  text-align: right;
+  text-decoration: none;
+  color: #4d4d4d;
+  margin-top: 10px;
+}
+main#login-admin #grid #first-section form button {
+  background: #ee2222;
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.25);
+  border-radius: 26px;
+  border: none;
+  margin-top: 40px;
+  width: 320px;
+  height: 52px;
+  color: #ffffff;
+  font-size: 20px;
+}
+main#login-admin #second-section {
+  background-image: url(/img/admin-login.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+/*# sourceMappingURL=login-admin.css.map */
