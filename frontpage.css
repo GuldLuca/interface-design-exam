@@ -4,6 +4,11 @@
   font-family: sofia-pro, sans-serif;
 }
 
+body {
+  display: flex;
+  flex-direction: column;
+}
+
 .read-more-btn {
   background-color: #ee2222;
   color: #ffffff;
@@ -309,12 +314,12 @@
 }
 
 .footer {
+  width: 100%;
   border-top: 1px solid #949494;
-  width: 90%;
-  margin-left: 15px;
+  padding: 30px 16px 0px 16px;
   display: flex;
   flex-direction: column;
-  margin-top: 20px;
+  margin-top: 100px;
 }
 .footer a {
   color: #4d4d4d;
@@ -322,14 +327,20 @@
   font-size: 14px;
   font-weight: 400;
 }
+.footer a:hover {
+  text-decoration: underline;
+}
 .footer .grid-1 {
   padding-top: 30px;
   padding-bottom: 20px;
 }
 .footer .grid-1 img {
-  padding-right: 20px;
+  margin: 0;
   width: 30px;
   height: auto;
+}
+.footer .grid-1 img:nth-child(1) {
+  margin-right: 24px;
 }
 .footer .grid-2 .privacy {
   padding-left: 30px;
