@@ -1,11 +1,9 @@
 @import "variables";
-
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
-
 header {
   border-bottom: 1px solid $basic-light-grey;
   .header-container {
@@ -26,7 +24,7 @@ header {
 
       i {
         cursor: pointer;
-        margin-left: 1px;
+        margin-left: 6px;
         font-size: 12px;
         color: $basic-dark-grey;
       }
