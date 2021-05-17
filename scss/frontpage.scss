@@ -3,10 +3,13 @@
 * {
   margin: 0;
   font-family: variables.$sofia-pro;
+  // box-sizing: border-box;
 }
 body {
+  width: 100%;
   display: flex;
   flex-direction: column;
+  // align-items: center;
 }
 .read-more-btn {
   background-color: variables.$main;
@@ -99,7 +102,7 @@ body {
 
     .background {
       background-image: url('img/section-2-background.png');
-      background-size: 100% auto;
+      background-size: cover;
       background-repeat: no-repeat;
       width: 90%;
       height: auto;
@@ -250,12 +253,14 @@ body {
 
 .section-4 {
   width: 100%;
+
   padding-top: 50px;
 
   .background {
     background-image: url('img/section-4-background.png');
-    background-size: 100% auto;
+    background-size: cover;
     background-repeat: no-repeat;
+    background-position: center;
     min-height: 300px;
     display: flex;
     flex-direction: column;
@@ -348,7 +353,6 @@ body {
 .footer {
   width: 100%;
   border-top: 1px solid variables.$basic-light-grey;
-  padding: 30px 16px 0px 16px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -414,7 +418,14 @@ body {
 }
 
 @media (min-width: variables.$tablet) {
-  .frontpage {
+  // .home-page {
+  //   & > div {
+  //     padding: 0px 10%;
+  //   }
+  // }
+  .home-page {
+    box-sizing: border-box;
+    padding: 0px 10%;
     .header {
       .profile {
         img {
