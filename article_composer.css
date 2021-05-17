@@ -5,6 +5,58 @@
   box-sizing: border-box;
 }
 
+header {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  border-bottom: 1px solid #949494;
+  grid-template-rows: 1fr;
+  align-items: center;
+  min-height: 7vh;
+  max-height: 7vh;
+  padding: 0 1rem;
+}
+header .profile {
+  height: 4vh;
+}
+header img {
+  height: 100%;
+  width: auto;
+}
+header .options {
+  justify-self: end;
+}
+header .options button {
+  padding: 0.5rem 1.5rem;
+  margin-left: 10px;
+  border-radius: 10px;
+  cursor: pointer;
+  font-weight: bold;
+  border: none;
+  background: none;
+}
+header .options button:hover {
+  text-decoration: underline;
+}
+header .options button:nth-child(3) {
+  background: none;
+  border: 1px solid #ee2222;
+  color: #ee2222;
+}
+header .options button:nth-child(3):hover {
+  background: #ee2222;
+  color: #ffffff;
+  text-decoration: none;
+}
+header .options button:last-child {
+  background: #ee2222;
+  color: #ffffff;
+}
+header .options button:last-child:hover {
+  background: #ffffff;
+  color: #ee2222;
+  text-decoration: underline;
+}
+
 #article_composer {
   max-width: 900px;
   margin: 0 auto;
