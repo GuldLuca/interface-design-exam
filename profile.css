@@ -156,8 +156,6 @@ section a {
 @media (min-width: 700px) {
   body {
     width: auto;
-    margin-left: 10%;
-    margin-right: 10%;
   }
 }
 @media (min-width: 1200px) {
