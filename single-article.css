@@ -159,7 +159,7 @@ section {
     background-image: url(https://cdn.loveandlemons.com/wp-content/uploads/2018/06/IMG_12572-yellow-cropped2.jpg);
   }
 }
-@media (min-width: 1200px) {
+@media (min-width: 1100px) {
   section {
     padding: 40px 20%;
   }

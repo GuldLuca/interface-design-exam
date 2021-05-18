@@ -84,8 +84,15 @@ body {
     font-size: 12px;
   }
 }
-
+.content {
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-template-rows: auto;
+  grid-gap: 20px;
+}
 .section-2 {
+  width: 100%;
   padding-bottom: 50px;
   h1 {
     color: variables.$basic-dark-red;
@@ -95,71 +102,6 @@ body {
     font-size: 25px;
     font-weight: 800;
   }
-
-  .flex-container {
-    display: flex;
-    justify-content: center;
-
-    .background {
-      background-image: url('img/section-2-background.png');
-      background-size: cover;
-      background-repeat: no-repeat;
-      width: 90%;
-      height: auto;
-      padding-top: 5px;
-
-      .recipe-label {
-        background-color: variables.$main-red-30;
-        color: variables.$basic-white;
-        margin-left: 10px;
-        margin-top: 5px;
-        padding-left: 5px;
-        padding-right: 5px;
-        padding-top: 8px;
-        padding-bottom: 8px;
-        width: 10%;
-        text-align: center;
-        border-radius: 25px;
-        font-size: 12px;
-        font-weight: 400;
-      }
-
-      .grid-view {
-        display: grid;
-        grid-template-columns: 4fr 2fr;
-      }
-
-      .recipe-white-box {
-        background-color: variables.$basic-white;
-        margin-top: 200px;
-        border-radius: 0px 20px 0px 0px;
-
-        .recipe-title {
-          padding-top: 10px;
-          font-weight: 800;
-          font-size: 18px;
-        }
-        .recipe-diet {
-          color: variables.$basic-light-grey;
-          font-size: 10px;
-          font-weight: 400;
-        }
-      }
-
-      .ratings {
-        margin-top: 200px;
-        background-color: variables.$see-through;
-        padding-left: 10px;
-        padding-right: 10px;
-        padding-top: 10px;
-        padding-bottom: 10px;
-        text-align: center;
-        font-weight: 400;
-        font-size: 13px;
-      }
-    }
-  }
-
   .last-section-recipe {
     background-color: variables.$basic-white;
     display: grid;
@@ -185,14 +127,19 @@ body {
 }
 
 .section-3 {
+  button {
+    margin-left: 18px;
+    a {
+      text-decoration: none;
+      color: variables.$basic-white;
+    }
+  }
   .background {
     background-image: url('img/section-2-background.png');
     background-size: 100% auto;
     background-repeat: no-repeat;
-    width: 90%;
-    margin-left: 19px;
     height: auto;
-    padding-top: 5px;
+    padding: 5px 0px 20px 0px;
     border-radius: 12px;
 
     .article-label {
@@ -238,22 +185,15 @@ body {
       font-weight: 400;
       color: variables.$basic-dark-grey;
       padding-top: 20px;
+      padding-left: 18px;
       width: 90%;
       padding-bottom: 25px;
-    }
-
-    button {
-      a {
-        text-decoration: none;
-        color: variables.$basic-white;
-      }
     }
   }
 }
 
 .section-4 {
   width: 100%;
-
   padding-top: 50px;
 
   .background {
@@ -308,6 +248,7 @@ body {
 }
 
 .section-5 {
+  width: 100%;
   margin-top: 45px;
   h1 {
     font-size: 25px;
@@ -418,10 +359,37 @@ body {
 }
 
 @media (min-width: variables.$tablet) {
-  .home-page {
-    box-sizing: border-box;
-    max-width: 900px;
-    padding: 0px 10%;
+  .section-1,
+  .section-2,
+  .section-3,
+  .section-4 {
+    margin-right: 10%;
+    margin-left: 10%;
+  }
+  .section-2 {
+    width: 80%;
+  }
+  .section-3 {
+    width: 80%;
+    .title,
+    .manchet,
+    img {
+      padding-left: 20px;
+      margin-left: 5%;
+    }
+    button {
+      margin-left: calc(5% + 20px);
+    }
+  }
+  .section-4 {
+    .background {
+      padding-left: 10%;
+    }
+  }
+  .section-5 {
+    width: 80%;
+  }
+  .section-5 .home-page {
     .header {
       .profile {
         img {
@@ -435,14 +403,12 @@ body {
           width: 150px;
         }
       }
-
       .search {
         img {
           width: 30px;
           padding-left: 150px;
         }
       }
-
       .menu {
         img {
           padding-left: 50px;
@@ -452,5 +418,19 @@ body {
         padding-top: 35px;
       }
     }
+  }
+}
+
+@media (min-width: variables.$desktop) {
+  article.single-recipe-template {
+    grid-template-rows: 360px auto auto;
+    .title-review-container {
+      top: calc(360px - 50px);
+    }
+  }
+
+  .content {
+    grid-template-columns: repeat(2, minmax(250px, 1fr));
+    grid-gap: 50px;
   }
 }
