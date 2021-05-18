@@ -1,6 +1,10 @@
 @import url(https://use.typekit.net/rll2ezx.css);
-main {
-  max-width: 1280px;
+.cont {
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-template-rows: auto;
+  grid-gap: 20px;
 }
 
 article.single-recipe-template {
@@ -97,6 +101,8 @@ article.single-recipe-template .image-link {
   display: flex;
   justify-content: space-between;
   padding-bottom: 10px;
+  background-color: white;
+  border-bottom: 1px solid rgba(77, 11, 11, 0.1);
 }
 .header .profile {
   padding-left: 20px;
@@ -118,11 +124,13 @@ article.single-recipe-template .image-link {
 }
 
 .footer {
+  width: 100%;
   border-top: 1px solid #949494;
-  width: 90%;
-  margin-left: 15px;
   display: flex;
   flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 100px;
 }
 .footer a {
   color: #4d4d4d;
@@ -130,14 +138,21 @@ article.single-recipe-template .image-link {
   font-size: 14px;
   font-weight: 400;
 }
+.footer a:hover {
+  text-decoration: underline;
+}
 .footer .grid-1 {
   padding-top: 30px;
   padding-bottom: 20px;
 }
 .footer .grid-1 img {
-  padding-right: 20px;
-  width: 30px;
+  margin: 0;
+  width: 35px;
+  height: 35px;
   height: auto;
+}
+.footer .grid-1 img:nth-child(1) {
+  margin-right: 24px;
 }
 .footer .grid-2 .privacy {
   padding-left: 30px;
@@ -158,7 +173,7 @@ article.single-recipe-template .image-link {
 .footer .grid-4 img {
   width: 16px;
   height: 16px;
-  margin-top: auto;
+  margin-top: 4px;
 }
 .footer .grid-4 p {
   font-size: 14px;
@@ -212,6 +227,18 @@ article.single-recipe-template .image-link {
 }
 .category-view-2 .category .see-less-icon img {
   padding-top: 35px;
+}
+
+@media (min-width: 700px) {
+  .cont {
+    margin: 0px 10%;
+  }
+}
+@media (min-width: 1200px) {
+  .cont {
+    margin: 100px 12%;
+    grid-template-columns: repeat(3, minmax(250px, 1fr));
+  }
 }
 
 /*# sourceMappingURL=recipe-list.css.map */
