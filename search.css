@@ -76,6 +76,7 @@ section#search-results {
 }
 
 #search-results {
+  width: 90%;
   min-height: 60vh;
 }
 #search-results a {
@@ -104,6 +105,10 @@ section#search-results {
 }
 
 @media (min-width: 1100px) {
+  #search-results {
+    width: 80%;
+  }
+
   #page-search form {
     width: 80%;
   }
