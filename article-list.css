@@ -182,7 +182,16 @@
 }
 
 @media (min-width: 700px) {
+  .title-of-article {
+    margin-left: 14%;
+  }
+
+  .latest {
+    margin: 0px 10%;
+  }
+
   .section-articles {
+    margin: 0px 10%;
     display: flex;
     flex-direction: row;
   }
