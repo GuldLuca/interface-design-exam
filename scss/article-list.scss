@@ -38,6 +38,7 @@ main#article-list .container {
 
   .title-container {
     width: 100%;
+
     grid-template-columns: 65% 35%;
     grid-template-rows: $overlay-height;
     justify-content: center;
@@ -171,7 +172,7 @@ main#article-list .container {
           color: variables.$basic-dark-red;
           font-weight: 800;
           font-size: 18px;
-          margin-top: 138px;
+          margin-top: 190px;
         }
         img {
           display: inline;
@@ -219,6 +220,13 @@ main#article-list .container {
 }
 
 @media (min-width: variables.$tablet) {
+  .title-container {
+    display: grid;
+  }
+
+  .container .article .background .article-title .title {
+    margin-top: 200px;
+  }
   .section-articles {
     display: flex;
     flex-direction: row;
@@ -233,5 +241,10 @@ main#article-list .container {
         }
       }
     }
+  }
+}
+@media (min-width: 1024px) {
+  .container .article .background .article-title .title {
+    margin-top: 138px;
   }
 }

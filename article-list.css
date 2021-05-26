@@ -162,7 +162,7 @@ main#article-list .container {
   color: #4d0b0b;
   font-weight: 800;
   font-size: 18px;
-  margin-top: 138px;
+  margin-top: 190px;
 }
 .container .article .background .article-title img {
   display: inline;
@@ -200,6 +200,14 @@ main#article-list .container {
 }
 
 @media (min-width: 700px) {
+  .title-container {
+    display: grid;
+  }
+
+  .container .article .background .article-title .title {
+    margin-top: 200px;
+  }
+
   .section-articles {
     display: flex;
     flex-direction: row;
@@ -213,6 +221,11 @@ main#article-list .container {
   }
   .section-articles .article .background .article-title {
     margin-top: 50px;
+  }
+}
+@media (min-width: 1024px) {
+  .container .article .background .article-title .title {
+    margin-top: 138px;
   }
 }
 

@@ -17,7 +17,8 @@ section#search-results {
 }
 
 main#search-amanda,
-main#search-amanda-people {
+main#search-amanda-people,
+main#search-page {
   max-width: 900px;
   margin: 0 auto;
 }
