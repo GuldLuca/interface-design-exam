@@ -3,6 +3,18 @@
 body {
   align-items: center;
 
+  main#private-profile,
+  main#public-profile {
+    max-width: 900px;
+    margin: 0 auto;
+
+    display: flex;
+    justify-self: center;
+    align-items: center;
+    flex-direction: column;
+    flex-wrap: nowrap;
+  }
+
   img {
     width: 100px;
     height: 100px;
@@ -90,8 +102,8 @@ a {
     display: grid;
     grid-gap: 6px;
     grid-template-areas:
-      'one two'
-      'three four';
+      "one two"
+      "three four";
     border-radius: 10px;
     overflow: hidden;
     div {
@@ -103,11 +115,11 @@ a {
       background-size: cover;
       &:nth-child(1) {
         grid-area: one;
-        background-image: url('img/section-2-background.png');
+        background-image: url("img/section-2-background.png");
       }
       &:nth-child(2) {
         grid-area: two;
-        background-image: url('img/cake.png');
+        background-image: url("img/cake.png");
       }
       &:nth-child(3) {
         grid-area: three;
@@ -119,7 +131,7 @@ a {
   }
 }
 #img1 {
-  background-image: url('img/bread.png') !important;
+  background-image: url("img/bread.png") !important;
 }
 #img2 {
   background-image: none !important;
@@ -155,13 +167,6 @@ section {
   }
 }
 
-@media (min-width: variables.$tablet) {
-  body {
-    width: auto;
-    margin-left: 10%;
-    margin-right: 10%;
-  }
-}
 @media (min-width: variables.$desktop) {
   section {
     width: 900px;

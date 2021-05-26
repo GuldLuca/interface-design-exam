@@ -3,24 +3,25 @@
 * {
   margin: 0;
   font-family: variables.$sofia-pro;
+  box-sizing: border-box;
   // box-sizing: border-box;
 }
 body {
   width: 100%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
 }
 .read-more-btn {
   background-color: variables.$main;
   color: variables.$basic-white;
   border-radius: 20px;
-  padding-left: 20px;
-  padding-right: 20px;
+
   padding-top: 8px;
   padding-bottom: 8px;
   border: none;
-  font-size: 12px;
+  font-size: 14px;
+  max-width: 97px;
+  min-height: 50px;
+  align-self: flex-end;
+  min-width: 97px;
 
   a {
     text-decoration: none;
@@ -28,6 +29,23 @@ body {
   }
 }
 
+main#frontpage {
+  padding-top: 25px;
+  max-width: 900px;
+  margin: 0 auto;
+  margin-bottom: 40px;
+  padding: 0 14px;
+  h1 {
+    padding: 20px 0px;
+  }
+}
+main#frontpage .content-container {
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-template-rows: auto;
+  grid-gap: 20px;
+}
 .header {
   display: flex;
   justify-content: space-between;
@@ -35,6 +53,7 @@ body {
   width: 100%;
   background-color: white;
   border-bottom: 1px solid rgba(77, 11, 11, 0.1);
+  margin-bottom: 20px;
   .profile {
     img {
       border-radius: 20px;
@@ -61,11 +80,12 @@ body {
   }
 }
 .section-1 {
-  background-image: url('img/section-1-background.jpg');
+  background-image: url("img/section-1-background.jpg");
   background-size: 100% auto;
   background-repeat: no-repeat;
   width: 100%;
   min-height: 298px;
+
   .section-text {
     width: 100%;
     h2 {
@@ -86,6 +106,7 @@ body {
 }
 
 .section-2 {
+  width: 100%;
   padding-bottom: 50px;
   h1 {
     color: variables.$basic-dark-red;
@@ -101,7 +122,7 @@ body {
     justify-content: center;
 
     .background {
-      background-image: url('img/section-2-background.png');
+      background-image: url("img/section-2-background.png");
       background-size: cover;
       background-repeat: no-repeat;
       width: 90%;
@@ -185,68 +206,72 @@ body {
 }
 
 .section-3 {
-  .background {
-    background-image: url('img/section-2-background.png');
-    background-size: 100% auto;
-    background-repeat: no-repeat;
-    width: 90%;
-    margin-left: 19px;
-    height: auto;
-    padding-top: 5px;
-    border-radius: 12px;
+  display: flex;
+  flex-wrap: nowrap;
+  flex-direction: column;
+  justify-content: space-between;
+  .manchet {
+    font-size: 12px;
+    font-weight: 400;
+    color: variables.$basic-dark-grey;
+    padding: 5px;
+  }
+  .article-single-container {
+    .background {
+      background-image: url("img/section-2-background.png");
+      background-size: cover;
+      background-repeat: no-repeat;
+      min-height: 250px;
+      height: auto;
+      padding-top: 5px;
+      border-radius: 12px;
+      position: relative;
 
-    .article-label {
-      background-color: variables.$accent-green-10;
-      color: variables.$basic-white;
-      margin-left: 10px;
-      margin-top: 5px;
-      padding-left: 12px;
-      padding-right: 12px;
-      padding-top: 8px;
-      padding-bottom: 8px;
-      width: 10%;
-      text-align: center;
-      border-radius: 25px;
-      font-size: 12px;
-      font-weight: 400;
-    }
-
-    .article-title {
-      background-color: variables.$see-through-2;
-      .title {
-        width: 80%;
-        padding-left: 20px;
-        padding-top: 10px;
-        color: variables.$basic-dark-red;
-        font-weight: 800;
-        font-size: 18px;
-        margin-top: 185px;
-      }
-      img {
-        display: inline;
-        padding-left: 20px;
-      }
-
-      .minutes {
-        display: inline;
-        font-size: 9px;
-      }
-    }
-
-    .manchet {
-      font-size: 14px;
-      font-weight: 400;
-      color: variables.$basic-dark-grey;
-      padding-top: 20px;
-      width: 90%;
-      padding-bottom: 25px;
-    }
-
-    button {
-      a {
-        text-decoration: none;
+      .article-label {
+        background-color: variables.$accent-green-10;
         color: variables.$basic-white;
+        margin-left: 10px;
+        margin-top: 5px;
+        padding-left: 12px;
+        padding-right: 12px;
+        padding-top: 8px;
+        padding-bottom: 8px;
+        width: 30%;
+        text-align: center;
+        border-radius: 25px;
+        font-size: 12px;
+        font-weight: 400;
       }
+
+      .article-title {
+        background-color: variables.$see-through-2;
+        position: absolute;
+        bottom: 0px;
+        padding: 0px 10px;
+        padding-bottom: 8px;
+        width: 100%;
+        .title {
+          color: variables.$basic-dark-red;
+          font-weight: 800;
+          font-size: 18px;
+        }
+        img {
+          display: inline;
+          padding-left: 20px;
+        }
+
+        .minutes {
+          display: inline;
+          font-size: 9px;
+          margin-bottom: 5px;
+        }
+      }
+    }
+  }
+  button {
+    a {
+      text-decoration: none;
+      color: variables.$basic-white;
     }
   }
 }
@@ -257,7 +282,7 @@ body {
   padding-top: 50px;
 
   .background {
-    background-image: url('img/section-4-background.png');
+    background-image: url("img/section-4-background.png");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -309,6 +334,8 @@ body {
 
 .section-5 {
   margin-top: 45px;
+  max-width: 900px;
+  margin: 0 auto;
   h1 {
     font-size: 25px;
     font-weight: 800;
@@ -329,8 +356,7 @@ body {
 
     img {
       border-radius: 65px;
-      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2),
-        0 6px 20px 0 rgba(0, 0, 0, 0.19);
+      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     }
 
     .img-1 {
@@ -419,9 +445,6 @@ body {
 
 @media (min-width: variables.$tablet) {
   .home-page {
-    box-sizing: border-box;
-    max-width: 900px;
-    padding: 0px 10%;
     .header {
       .profile {
         img {
@@ -438,14 +461,17 @@ body {
 
       .search {
         img {
-          width: 30px;
-          padding-left: 150px;
+          width: 20px;
+          height: 20px;
+
+          z-index: 2000;
         }
       }
 
       .menu {
         img {
-          padding-left: 50px;
+          width: 20px;
+          height: 20px;
           width: 50px;
           height: auto;
         }

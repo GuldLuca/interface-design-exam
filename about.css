@@ -17,6 +17,21 @@ h1 {
   font-weight: 800;
 }
 
+main#about {
+  padding-top: 25px;
+  max-width: 900px;
+  margin: 0 auto;
+  margin-bottom: 40px;
+  padding: 0 14px;
+}
+main#about h1 {
+  padding: 20px 0px;
+}
+
+main#about .container {
+  margin: 0 auto;
+}
+
 p {
   font-size: 18px;
   font-weight: 400;
@@ -66,17 +81,11 @@ form button img {
 @media (min-width: 700px) {
   body {
     width: auto;
-    margin-left: 10%;
-    margin-right: 10%;
   }
 }
 @media (min-width: 1200px) {
   section {
     width: 800px;
-  }
-
-  form {
-    width: 500px;
   }
 }
 

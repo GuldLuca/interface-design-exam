@@ -77,12 +77,18 @@ article.single-recipe-template .icon-button-container a.button {
   border-radius: 20px;
   background: #ee2222;
   color: #ffffff;
+  color: #ffffff;
   border: none;
   filter: drop-shadow(2px 0px 2px rgba(238, 34, 34, 0.3));
-  height: fit-content;
-  padding: 0.5rem 1.25rem;
+  height: 100%;
+  width: 100%;
+  /* padding: 0.5rem 1.25rem; */
   text-decoration: none;
   text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 14px;
 }
 article.single-recipe-template .image-link {
   content: "";

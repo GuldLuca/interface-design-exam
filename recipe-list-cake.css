@@ -3,6 +3,25 @@ main {
   max-width: 1280px;
 }
 
+main#recipe-list-cake {
+  padding-top: 25px;
+  max-width: 900px;
+  margin: 0 auto;
+  margin-bottom: 40px;
+}
+main#recipe-list-cake .results {
+  margin-bottom: 30px;
+}
+
+main#recipe-list-cake .container {
+  margin: 0 auto;
+  display: grid;
+  width: 100%;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-template-rows: auto;
+  grid-gap: 20px;
+}
+
 article.single-recipe-template {
   display: grid;
   grid-template-columns: repeat(1, 1fr);
@@ -97,6 +116,7 @@ article.single-recipe-template .image-link {
   display: flex;
   justify-content: space-between;
   padding-bottom: 10px;
+  border-bottom: 1px solid #949494;
 }
 .header .profile {
   padding-left: 20px;

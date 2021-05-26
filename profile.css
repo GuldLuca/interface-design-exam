@@ -2,6 +2,16 @@
 body {
   align-items: center;
 }
+body main#private-profile,
+body main#public-profile {
+  max-width: 900px;
+  margin: 0 auto;
+  display: flex;
+  justify-self: center;
+  align-items: center;
+  flex-direction: column;
+  flex-wrap: nowrap;
+}
 body img {
   width: 100px;
   height: 100px;
@@ -153,13 +163,6 @@ section a {
   box-shadow: inset 0px 0px 0px 1px black;
 }
 
-@media (min-width: 700px) {
-  body {
-    width: auto;
-    margin-left: 10%;
-    margin-right: 10%;
-  }
-}
 @media (min-width: 1200px) {
   section {
     width: 900px;

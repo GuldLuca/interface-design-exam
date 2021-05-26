@@ -1,4 +1,4 @@
-@import 'variables';
+@import "variables";
 
 $image-height: 300px;
 $overlay-height: 50px;
@@ -89,16 +89,22 @@ article.single-recipe-template {
       border-radius: 20px;
       background: $main;
       color: $basic-white;
+      color: #ffffff;
       border: none;
-      filter: drop-shadow(2px 0px 2px $main-red-30);
-      height: fit-content;
-      padding: 0.5rem 1.25rem;
+      filter: drop-shadow(2px 0px 2px rgba(238, 34, 34, 0.3));
+      height: 100%;
+      width: 100%;
+      /* padding: 0.5rem 1.25rem; */
       text-decoration: none;
       text-align: center;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 14px;
     }
   }
   .image-link {
-    content: '';
+    content: "";
     width: 100%;
     height: $image-height;
     position: absolute;

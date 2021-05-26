@@ -16,6 +16,12 @@ section#search-results {
   padding: 0;
 }
 
+main#search-amanda,
+main#search-amanda-people {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
 #page-search form {
   position: relative;
   padding: 45px 17px 17px 17px;
@@ -100,21 +106,6 @@ section#search-results {
   line-height: 25px;
   text-align: center;
   color: #4d4d4d;
-}
-
-@media (min-width: 700px) {
-  body {
-    width: auto;
-    margin-left: 10%;
-    margin-right: 10%;
-  }
-}
-@media (min-width: 1200px) {
-  body {
-    width: auto;
-    margin-left: 20%;
-    margin-right: 20%;
-  }
 }
 
 /*# sourceMappingURL=search.css.map */

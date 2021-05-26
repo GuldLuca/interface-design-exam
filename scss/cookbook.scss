@@ -5,6 +5,28 @@ body {
   flex-direction: column;
   align-items: center;
 }
+
+main#public-cook-book {
+  section {
+    padding: 0;
+  }
+  width: 100%;
+  padding-top: 25px;
+  max-width: 900px;
+  margin: 0 auto;
+  margin-bottom: 40px;
+  padding: 0 14px;
+  h1 {
+    padding: 20px 0px;
+  }
+}
+main#public-cook-book .container {
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-template-rows: auto;
+  grid-gap: 20px;
+}
 button {
   width: 100px;
   height: 38px;
@@ -28,17 +50,13 @@ button {
 .header-wrapper {
   margin-top: 21px;
   margin-bottom: 30px;
-
+  margin-left: 14px;
+  margin-right: 14px;
   img {
     height: 16.25px;
     width: 17px;
   }
-  #arrow-back {
-    margin-top: 6px;
-    margin-left: 18px;
-    position: absolute;
-    left: 0;
-  }
+
   h1 {
     margin: auto;
     font-weight: 800;
@@ -71,18 +89,5 @@ button {
   justify-content: space-evenly;
   article {
     margin: 20px 8px;
-  }
-}
-
-@media (min-width: variables.$tablet) {
-  body {
-    width: auto;
-    margin-left: 10%;
-    margin-right: 10%;
-  }
-}
-@media (min-width: variables.$desktop) {
-  section {
-    width: 900px;
   }
 }

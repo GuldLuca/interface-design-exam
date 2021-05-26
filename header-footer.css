@@ -33,7 +33,6 @@
 .footer {
   width: 100%;
   border-top: 1px solid #949494;
-  padding: 30px 16px 0px 16px;
   display: flex;
   flex-direction: column;
   justify-content: center;

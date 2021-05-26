@@ -15,6 +15,20 @@ h1 {
   font-size: 25px;
   font-weight: 800;
 }
+
+main#about {
+  padding-top: 25px;
+  max-width: 900px;
+  margin: 0 auto;
+  margin-bottom: 40px;
+  padding: 0 14px;
+  h1 {
+    padding: 20px 0px;
+  }
+}
+main#about .container {
+  margin: 0 auto;
+}
 p {
   font-size: 18px;
   font-weight: 400;
@@ -60,8 +74,6 @@ form {
 @media (min-width: variables.$tablet) {
   body {
     width: auto;
-    margin-left: 10%;
-    margin-right: 10%;
   }
 }
 @media (min-width: variables.$desktop) {
@@ -69,6 +81,5 @@ form {
     width: 800px;
   }
   form {
-    width: 500px;
   }
 }

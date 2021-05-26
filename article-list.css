@@ -3,8 +3,28 @@
   margin: 0;
 }
 
+main#article-list {
+  padding-top: 25px;
+  max-width: 900px;
+  margin: 0 auto;
+  margin-bottom: 40px;
+  padding: 0 14px;
+}
+main#article-list h1 {
+  padding: 20px 0px;
+}
+
+main#article-list .container {
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-template-rows: auto;
+  grid-gap: 20px;
+}
+
 .section-1 {
   width: 100%;
+  position: relative;
 }
 .section-1 .image {
   background-image: url("img/pexels-tran-564883 1.png");
@@ -14,14 +34,14 @@
   height: 255px;
 }
 .section-1 .title-container {
-  display: grid;
   width: 100%;
   grid-template-columns: 65% 35%;
   grid-template-rows: 50px;
   justify-content: center;
   align-items: center;
   position: absolute;
-  top: calc(300px - 50px);
+  /*  top: calc(300px - 50px); */
+  bottom: 0;
   background: rgba(255, 255, 255, 0.7);
   padding-top: 15px;
   padding-bottom: 15px;
@@ -103,23 +123,21 @@
   color: #ffffff;
 }
 
-.section-articles {
+.container {
   padding-top: 20px;
 }
-.section-articles .article {
+.container .article {
   padding-bottom: 30px;
 }
-.section-articles .article .background {
+.container .article .background {
   background-image: url("img/section-2-background.png");
-  background-size: 100% auto;
+  background-size: contain;
   background-repeat: no-repeat;
-  max-width: 350px;
-  margin-left: 15px;
   height: auto;
   padding-top: 5px;
   border-radius: 12px;
 }
-.section-articles .article .background .article-label {
+.container .article .background .article-label {
   background-color: rgba(31, 229, 183, 0.3);
   color: #ffffff;
   margin-left: 10px;
@@ -134,27 +152,27 @@
   font-size: 12px;
   font-weight: 400;
 }
-.section-articles .article .background .article-title {
+.container .article .background .article-title {
   background-color: rgba(255, 255, 255, 0.7);
 }
-.section-articles .article .background .article-title .title {
+.container .article .background .article-title .title {
   width: 80%;
   padding-left: 20px;
   padding-top: 10px;
   color: #4d0b0b;
   font-weight: 800;
   font-size: 18px;
-  margin-top: 185px;
+  margin-top: 138px;
 }
-.section-articles .article .background .article-title img {
+.container .article .background .article-title img {
   display: inline;
   padding-left: 20px;
 }
-.section-articles .article .background .article-title .minutes {
+.container .article .background .article-title .minutes {
   display: inline;
   font-size: 9px;
 }
-.section-articles .article .background .manchet {
+.container .article .background .manchet {
   font-size: 14px;
   font-weight: 400;
   color: #4d4d4d;
@@ -162,7 +180,7 @@
   width: 100%;
   padding-bottom: 25px;
 }
-.section-articles .article .background button a {
+.container .article .background button a {
   text-decoration: none;
   color: #ffffff;
 }
