@@ -3,12 +3,12 @@
 $image-height: 300px;
 $overlay-height: 50px;
 
-main {
-  max-width: 1280px;
-}
-
 .cont {
-  // Let's try to style content in each page we add it in seperately
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-template-rows: auto;
+  grid-gap: 20px;
 }
 main#recipe-list,
 main#recipe-list-expanded {
@@ -127,7 +127,12 @@ article.single-recipe-template {
   display: flex;
   justify-content: space-between;
   padding-bottom: 10px;
+<<<<<<< HEAD
   border-bottom: 1px solid variables.$basic-light-grey;
+=======
+  background-color: white;
+  border-bottom: 1px solid rgba(77, 11, 11, 0.1);
+>>>>>>> 1b87b7cdb24562efd4179918fc883da973428821
   .profile {
     img {
       border-radius: 20px;
@@ -150,16 +155,28 @@ article.single-recipe-template {
 }
 
 .footer {
+<<<<<<< HEAD
   border-top: 1px solid variables.$basic-light-grey;
   width: 90%;
   margin-left: 15px;
   display: flex;
   flex-direction: column;
+=======
+  width: 100%;
+  border-top: 1px solid variables.$basic-light-grey;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 100px;
+
+>>>>>>> 1b87b7cdb24562efd4179918fc883da973428821
   a {
     color: variables.$basic-dark-grey;
     text-decoration: none;
     font-size: 14px;
     font-weight: 400;
+<<<<<<< HEAD
   }
 
   .grid-1 {
@@ -185,6 +202,41 @@ article.single-recipe-template {
     }
   }
 
+=======
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+
+  .grid-1 {
+    padding-top: 30px;
+    padding-bottom: 20px;
+    img {
+      margin: 0;
+      width: 35px;
+      height: 35px;
+      height: auto;
+      &:nth-child(1) {
+        margin-right: 24px;
+      }
+    }
+  }
+
+  .grid-2 {
+    .privacy {
+      padding-left: 30px;
+    }
+  }
+
+  .grid-3 {
+    padding-top: 10px;
+    .contact {
+      padding-left: 70px;
+    }
+  }
+
+>>>>>>> 1b87b7cdb24562efd4179918fc883da973428821
   .grid-4 {
     display: flex;
     justify-content: center;
@@ -194,13 +246,19 @@ article.single-recipe-template {
     img {
       width: 16px;
       height: 16px;
+<<<<<<< HEAD
       margin-top: auto;
+=======
+      margin-top: 4px;
+>>>>>>> 1b87b7cdb24562efd4179918fc883da973428821
     }
     p {
       font-size: 14px;
       font-weight: 300;
       padding-left: 10px;
       color: variables.$basic-dark-grey;
+<<<<<<< HEAD
+=======
     }
   }
 }
@@ -209,8 +267,6 @@ article.single-recipe-template {
   display: flex;
   justify-content: space-around;
   align-content: center;
-  max-width: 900px;
-  margin: 30px auto;
 
   .category {
     text-align: center;
@@ -227,7 +283,46 @@ article.single-recipe-template {
       img {
         padding-top: 20px;
       }
+>>>>>>> 1b87b7cdb24562efd4179918fc883da973428821
     }
+  }
+}
+
+<<<<<<< HEAD
+.category-view {
+  display: flex;
+  justify-content: space-around;
+  align-content: center;
+  max-width: 900px;
+  margin: 30px auto;
+
+  .category {
+    text-align: center;
+
+=======
+.category-view-2 {
+  display: flex;
+  justify-content: space-around;
+  align-content: center;
+
+  .category {
+    text-align: center;
+
+>>>>>>> 1b87b7cdb24562efd4179918fc883da973428821
+    p {
+      font-weight: 800;
+      font-size: 14px;
+    }
+    .pink {
+      border-radius: 35px;
+      background-color: variables.$main-red-10;
+      width: 70px;
+      height: 70px;
+      img {
+        padding-top: 20px;
+      }
+    }
+<<<<<<< HEAD
   }
 }
 
@@ -260,5 +355,25 @@ article.single-recipe-template {
         padding-top: 35px;
       }
     }
+=======
+
+    .see-less-icon {
+      img {
+        padding-top: 35px;
+      }
+    }
+  }
+}
+
+@media (min-width: variables.$tablet) {
+  .cont {
+    margin: 0px 10%;
+  }
+}
+@media (min-width: variables.$desktop) {
+  .cont {
+    margin: 100px 12%;
+    grid-template-columns: repeat(3, minmax(250px, 1fr));
+>>>>>>> 1b87b7cdb24562efd4179918fc883da973428821
   }
 }

@@ -209,6 +209,7 @@ main#article-list .container {
   }
 
   .section-articles {
+    margin: 0px 10%;
     display: flex;
     flex-direction: row;
   }

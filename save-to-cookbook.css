@@ -52,7 +52,7 @@
 #save-to-cookbook .create-new-cookbook p {
   margin-left: 10px;
 }
-@media (min-width: 1200px) {
+@media (min-width: 1100px) {
   #save-to-cookbook {
     min-height: 400px;
     width: 400px;

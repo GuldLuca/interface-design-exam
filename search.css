@@ -24,11 +24,11 @@ main#search-page {
 }
 
 #page-search form {
+  width: 90%;
   position: relative;
   padding: 45px 17px 17px 17px;
   display: flex;
   align-items: center;
-  border-bottom: 1px solid rgba(77, 11, 11, 0.25);
 }
 #page-search form a.amanda-page {
   content: "";
@@ -58,6 +58,7 @@ main#search-page {
   width: 100%;
   padding: 0;
   display: flex;
+  border-top: 1px solid rgba(77, 11, 11, 0.25);
 }
 #page-search #tabs-search a {
   width: 100%;
@@ -82,6 +83,7 @@ main#search-page {
 }
 
 #search-results {
+  width: 90%;
   min-height: 60vh;
 }
 #search-results a {

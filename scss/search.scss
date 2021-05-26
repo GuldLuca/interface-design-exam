@@ -22,7 +22,11 @@ main#search-page {
 }
 #page-search {
   form {
+    width: 90%;
     position: relative;
+    padding: 45px 17px 17px 17px;
+    display: flex;
+    align-items: center;
     a.amanda-page {
       content: "";
       width: 80%;
@@ -31,10 +35,6 @@ main#search-page {
       right: 0;
       position: absolute;
     }
-    padding: 45px 17px 17px 17px;
-    display: flex;
-    align-items: center;
-    border-bottom: 1px solid rgba(77, 11, 11, 0.25);
     #btn-arrow-back {
       width: 17px;
       height: 16.25px;
@@ -56,7 +56,7 @@ main#search-page {
     width: 100%;
     padding: 0;
     display: flex;
-
+    border-top: 1px solid rgba(77, 11, 11, 0.25);
     a {
       width: 100%;
       margin: auto;
@@ -82,6 +82,7 @@ main#search-page {
 }
 
 #search-results {
+  width: 90%;
   min-height: 60vh;
   a {
     text-decoration: none;

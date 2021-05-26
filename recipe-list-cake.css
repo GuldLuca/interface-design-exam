@@ -30,7 +30,7 @@ article.single-recipe-template {
   position: relative;
 }
 article.single-recipe-template .image {
-  background-image: url(../img/section-2-background.png);
+  background-image: url(img/section-2-background.png);
   background-position: center;
   background-size: cover;
   width: 100%;
@@ -222,6 +222,9 @@ article.single-recipe-template .image-link {
   font-size: 18px;
 }
 
+.results {
+  margin-bottom: 30px;
+}
 .results p {
   font-weight: 800;
   font-size: 25px;
@@ -240,6 +243,7 @@ article.single-recipe-template .image-link {
   padding-top: 7px;
   padding-bottom: 7px;
   float: right;
+  margin-right: 15px;
 }
 
 .pages {

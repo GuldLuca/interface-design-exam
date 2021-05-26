@@ -7,8 +7,13 @@ main {
   max-width: 1280px;
 }
 
-.cont {
-  // Let's try to style content in each page we add it in seperately
+.container {
+  max-width: 900px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-template-rows: auto;
+  grid-gap: 20px;
 }
 
 main#recipe-list-cake {
@@ -37,7 +42,7 @@ article.single-recipe-template {
   align-items: center;
   position: relative;
   .image {
-    background-image: url(../img/section-2-background.png);
+    background-image: url(img/section-2-background.png);
     background-position: center;
     background-size: cover;
     width: 100%;
@@ -247,8 +252,14 @@ article.single-recipe-template {
   }
 }
 
+<<<<<<< HEAD
 .results {
   p {
+=======
+.results{
+  margin-bottom: 30px;
+  p{
+>>>>>>> 1b87b7cdb24562efd4179918fc883da973428821
     font-weight: 800;
     font-size: 25px;
     display: inline;
@@ -267,6 +278,7 @@ article.single-recipe-template {
     padding-top: 7px;
     padding-bottom: 7px;
     float: right;
+    margin-right: 15px;
   }
 }
 
